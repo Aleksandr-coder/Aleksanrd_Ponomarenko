@@ -1,0 +1,1440 @@
+@import "reset.css";
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+	.logo{
+		padding-right: 25px;
+			h1{
+				text-transform: uppercase;
+				color: #fff;
+				font-size: 32px;
+				font-family: 'Open Sans', sans-serif;
+				font-weight: 900;
+				span{
+					color: #fa7c30;
+					}
+			}
+		}
+	button{
+		margin-top: 3%;
+		width: 170px;
+		height: 45px;
+		border: none;
+		color: #fff;
+		text-transform: uppercase;
+		font-weight: 900;
+		background: #fa7c30;
+		transition: all .3s ease 0s;
+		&:hover{
+			transition: all .3s ease 0s;
+			color: #000;
+			background: #fa4c30;
+		}
+	}
+	.title{
+		h3{
+			font-size: 36px;
+			line-height: 1.5em;
+			text-transform: uppercase;
+			font-weight: 900;
+			font-family: 'Open Sans', sans-serif;
+			span{
+				color: #fa7c30;
+			}
+		}
+		.title_sub{
+			font-size: 14px;
+			font-family: 'Open Sans', sans-serif;
+			padding-bottom: 50px;
+		}
+	}
+	.wrapper{
+		width: 70%;
+		margin: 0px auto;
+	}
+header{
+	position: relative;
+	height: 950px;
+	width: 100%;
+	background: rgba(0, 0, 0, .7);
+	nav{
+		padding: 30px 30px;
+		display: flex;
+			.menu_top{
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+				.logo_menu{
+					display: none;
+				}
+			}
+			.menu{
+				display: flex;
+				height: 100%;
+				align-items: center;
+				.item_link{
+					display: block;
+					font-size: 16px;
+					font-weight: 900;
+					text-transform: uppercase;
+					color: #fff;
+					padding: 10px 25px;
+					text-decoration: none;
+						transition: all .5s;
+					&:hover{
+						transition: all .5s;
+						color: #fa7c30;
+						box-shadow: 0px 0px 2px 2px #fff;
+					}
+				}
+			}
+			.burger_bar{
+				display: none;
+			}
+	}
+	.banner{
+		.banner_bg{
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+		}
+		.text{
+			padding-top: 5%;
+			.beautiful_body{
+				font-size: 70px;
+				line-height: 1.5em;
+				text-transform: uppercase;
+				color: #fff;
+				font-weight: 900;
+				font-family: 'Open Sans', sans-serif;
+				span{
+					color: #fa7c30;
+				}
+			}
+			.little_text{
+				color: #fff;
+				font-size: 14px;
+				font-family: 'Open Sans', sans-serif;
+			}
+		}
+	.order{
+		display: flex;
+		background: #fff;
+		margin-top: 12%;
+		box-shadow: 0 0 30px #000;
+		.order_box_img{
+			width: 30%;
+			img{
+				width: 100%;
+				height: 100%;
+			}
+		}
+		.order_box_text{
+			width: 70%;
+			text-align: center;
+			.free_days{
+				padding: 70px 0px 30px 0px;
+				font-size: 26px;
+				font-family: 'Open Sans', sans-serif;
+				font-weight: 900;
+				text-transform: uppercase;
+			}
+			.online_bookin{
+				font-size: 36px;
+				font-family: 'Open Sans', sans-serif;
+				font-weight: 900;
+				text-transform: uppercase;
+
+			}
+			.form{
+				width: 100%;
+				padding: 5% 0 3% 0;
+				display: flex;
+				justify-content: center;
+			.people_time{
+				width: 80%;
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				input{
+					width: 30%;
+					border: none;
+					border-bottom: 1px solid #000;
+					height: 50px;
+				}
+			}
+			}
+		}
+	}
+	}
+}
+.welcome_fitnes{
+	height: 1300px;
+	background: #f1f4f6;
+	display: flex;
+	align-items: center;
+	.content_about{
+		display: flex;
+		justify-content: space-between;
+		padding-top: 20%;
+		.about_text{
+			width: 50%;
+			padding-top: 10%;
+			h3{
+				font-size: 36px;
+				text-transform: uppercase;
+				color: #000;
+				font-weight: 900;
+				font-family: 'Open Sans', sans-serif;
+				line-height: 1.5em;
+				span{
+					color: #fa7c30;
+				}
+			}
+			.text_1{
+				font-family: 'Open Sans', sans-serif;
+				font-size: 14px;
+				font-weight: 900;
+				line-height: 2em;
+			}
+			.text_2{
+				font-family: 'Open Sans', sans-serif;
+				padding-top: 20px;
+				font-size: 14px;
+				line-height: 2em;
+			}
+		}
+		.about_img{
+			width: 50%;
+			margin-right: -15%;
+			img{
+				width: 100%;
+			}
+		}
+	}
+}
+.programm{
+		margin: 80px 0px;
+	.section_programm{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		.section{
+			width: calc(33.333% - 20px);
+			background: #f1f4f6;
+			img{
+				width: 100%;
+			}
+			.about_programm{
+				padding: 30px;
+				.title_programm{
+					font-size: 26px;
+					font-weight: 900;
+				}
+				.text_programm{
+					padding: 10px 0px 40px 0px;
+					font-size: 16px;
+					line-height: 1.5em;
+				}
+			}
+		}
+	}
+}
+.personale_traiber{
+	position: relative;
+	img{
+		width: 100%;
+	}
+	.trainer_width{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background: rgba(0, 0, 0, .5);
+		.content{
+			height: 100%;
+			display:flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			color: #fff;
+			text-transform: uppercase;
+			h3{
+				font-size: 36px;
+			}
+			p{
+				font-size: 70px;
+				line-height: 1.5em;
+				font-weight: 900;
+			}
+		}
+	}
+}
+.trainers{
+		margin: 80px 0px;
+	.section_trainers{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		height: 100%;
+		align-items: flex-end;
+		.section{
+			width: calc(33.333% - 30px);
+			img{
+				width: 100%;
+			}
+			.about_programm{
+				padding-top: 30px;
+				text-align: center;
+				.name_trainer{
+					font-size: 26px;
+					font-weight: 900;
+					line-height: 1.5em;
+				}
+				.trainer_prof{
+					font-size: 14px;
+					color: #fa7c30;
+					text-transform: uppercase;
+					font-weight: 900;
+					padding-bottom: 30px;
+				}
+				.trainer_info{
+					font-size: 16px;
+					line-height: 1.5em;
+				}
+			}
+		}
+	}
+}
+.media{
+	.media_content{
+		display: flex;
+		.sector{
+			position: relative;
+			width: 50%;
+			img{
+				width: 100%;
+			}
+			.content_media{
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				background: rgba(0, 0, 0, .5);
+				color: #fff;
+				text-transform: uppercase;
+				.title_media{
+					color: #fff;
+					font-size: 18px;
+					font-weight: 700;
+				}
+				.info_media{
+					font-size: 46px;
+					font-weight: 900;
+					padding: 3% 0;
+				}
+			}
+		}
+	}
+}
+.footer{
+	width: 100%;
+	height: 100%;
+	background: #161418;
+	color: #fff;
+	.footer_content{
+		padding: 75px 0px;
+		display: flex;
+		.folow_us{
+			width: 45%;
+			.logo{
+				padding: 30px 0px;
+			}
+			.about_company{
+				font-size: 14px;
+				line-height: 2em;
+				padding: 0px 55px 30px 0px;
+			}
+			.social_icons{
+				padding: 30px 0px;
+				font-size: 15px;
+				a{
+					padding: 0px 5px;
+					color: #fff;
+					transition: all .3s ease 0s;
+					&:hover{
+						transition: all .3s ease 0s;
+						color: #fa7c30;
+					}
+				}
+			}
+			.subscribe{
+				.email{
+					width: 230px;
+					height: 40px;
+					padding: 0 5px;
+					border: none;
+				}
+				.button_subscribe{
+					width: 150px;
+					height: 40px;
+					color: #fff;
+					background: #fa7c30;
+					border: none;
+					font-weight: 700;
+					letter-spacing: 2px;
+					transition: all .3s ease 0s;
+						&:hover{
+							transition: all .3s ease 0s;
+							color: #000;
+							background: #fa4c30;
+						}
+				}
+			}
+		}
+		.blogs{
+			width: 30%;
+			.title_box{
+				padding-bottom: 15px;
+				text-transform: uppercase;
+			}
+			.blogs_block{
+				display: flex;
+				padding: 30px  0px 0px 0px;
+				img{
+					width: 100%;
+					height: 100%;
+				}
+				p{
+					padding: 20px 0px 20px 20px;
+					line-height: 1.5em;
+					font-size: 14px;
+				}
+			}
+		}
+		.instagram{
+			width: 25%;
+			padding: 0px 0px 0px 30px;
+			.title_box{
+				padding-bottom: 15px;
+				text-transform: uppercase;
+			}
+			.insta_block{
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				img{
+					width: calc(33.333% - 2px);
+					margin-bottom: 3px;
+				}
+			}
+			.more_fotos_instagram{
+				padding-top: 20px;
+				a{
+					color: #fff;
+					transition: all .3s ease 0s;
+					text-decoration: none;
+					&:hover{
+						transition: all .3s ease 0s;
+						color: #fa7c30;
+					}
+				}
+			}
+		}
+	}
+	.copyright{
+		text-align: center;
+		color: #fa7c30;
+		line-height: 1.5em;
+		font-size: 12px;
+		a{
+			color: #fa7c30;
+			text-decoration: none;
+			transition: all .3s ease 0s;
+		&:hover{
+			transition: all .3s ease 0s;
+			color: #EA4335;
+		}
+		}
+	}
+}
+@media all and (max-width: 1600px){
+	.welcome_fitnes{
+		height: 1000px;
+	}
+}
+@media all and (max-width: 1400px){
+	.logo{
+			h1{
+				font-size: 28px;
+			}
+		}
+	button{
+		width: 160px;
+		height: 40px;
+	}
+	.title{
+		h3{
+			font-size: 36px;
+		}
+	}
+	header{
+		height: 750px;
+		nav{
+				.menu{
+					.item_link{
+						font-size: 14px;
+						padding: 10px 20px;
+					}
+				}
+		}
+		.banner{
+			.text{
+				.beautiful_body{
+					font-size: 62px;
+				}
+			}
+
+	.order{
+		.order_box_text{
+			.free_days{
+				padding: 50px 0px 20px 0px;
+				font-size: 22px;
+			}
+			.online_bookin{
+				font-size: 32px;
+			}
+			.form{
+			.people_time{
+				input{
+					height: 40px;
+				}
+			}
+			}
+		}
+	}
+		}
+	}
+	.footer{
+		.footer_content{
+			padding: 50px 0px;
+			display: flex;
+			.folow_us{
+				.subscribe{
+					.email{
+						width: 180px;
+						font-size: 14px;
+					}
+					.button_subscribe{
+						width: 120px;
+						font-size: 14px;
+						letter-spacing: 1.5px;
+					}
+				}
+			}
+			.blogs{
+				.title_box{
+					padding-bottom: 10px;
+				}
+				.blogs_block{
+					padding: 20px  0px 0px 0px;
+					p{
+						padding: 10px 0px 10px 10px;
+						line-height: 1.5em;
+						font-size: 12px;
+					}
+				}
+			}
+		}
+		.copyright{
+			text-align: center;
+			color: #fa7c30;
+			line-height: 1.5em;
+			font-size: 12px;
+			a{
+				color: #fa7c30;
+				text-decoration: none;
+				transition: all .3s ease 0s;
+			&:hover{
+				transition: all .3s ease 0s;
+				color: #EA4335;
+			}
+			}
+		}
+	}
+}
+@media all and (max-width: 1140px){
+	.logo{
+		padding-right: 20px;
+			h1{
+				font-size: 24px;
+			}
+		}
+	button{
+		width: 120px;
+		height: 35px;
+		font-size: 12px;
+		letter-spacing: 1.5px;
+	}
+	.title{
+		h3{
+			font-size: 28px;
+		}
+		.title_sub{
+			font-size: 12px;
+			padding-bottom: 30px;
+		}
+	}
+	.wrapper{
+		width: 80%;
+	}
+header{
+	height: 560px;
+	nav{
+		padding: 20px 20px;
+			.menu_top{
+				padding: 20px;
+			}
+			.menu{
+				.item_link{
+					font-size: 12px;
+					padding: 10px 20px;
+				}
+			}
+		}
+	.banner{
+		.text{
+			padding-top: 2%;
+			.beautiful_body{
+				font-size: 48px;
+				line-height: 1.5em;
+			}
+			.little_text{
+				font-size: 14px;
+			}
+		}
+	.order{
+		.order_box_text{
+			width: 70%;
+			text-align: center;
+			.free_days{
+				padding: 30px 0px 30px 0px;
+				font-size: 22px;
+			}
+			.online_bookin{
+				font-size: 32px;
+			}
+		}
+	}
+	}
+}
+.welcome_fitnes{
+	height: 750px;
+	.content_about{
+		padding-top: 25%;
+		.about_text{
+			width: 50%;
+			padding-top: 10%;
+			h3{
+				font-size: 28px;
+			}
+			.text_1{
+				font-size: 12px;
+			}
+			.text_2{
+				font-size: 12px;
+			}
+		}
+		.about_img{
+			margin-right: -10%;
+		}
+	}
+}
+.programm{
+		margin: 50px 0px;
+	.section_programm{
+		.section{
+			width: calc(33.333% - 10px);
+			.about_programm{
+				padding: 20px;
+				.title_programm{
+					font-size: 22px;
+				}
+				.text_programm{
+					padding: 10px 0px 10px 0px;
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}
+.personale_traiber{
+	.trainer_width{
+		.content{
+			h3{
+				font-size: 22px;
+			}
+			p{
+				font-size: 36px;
+			}
+		}
+	}
+}
+.trainers{
+		margin: 50px 0px;
+	.section_trainers{
+		.section{
+			width: calc(33.333% - 15px);
+			.about_programm{
+				padding-top: 20px;
+				.name_trainer{
+					font-size: 22px;
+				}
+				.trainer_prof{
+					font-size: 12px;
+					padding-bottom: 20px;
+				}
+				.trainer_info{
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}
+.media{
+	.media_content{
+		.sector{
+			.content_media{
+				.title_media{
+					font-size: 16px;
+				}
+				.info_media{
+					font-size: 26px;
+				}
+			}
+		}
+	}
+}
+.footer{
+	width: 100%;
+	height: 100%;
+	.footer_content{
+		padding: 50px 0px;
+		.folow_us{
+			width: 45%;
+			.logo{
+				padding: 30px 0px;
+			}
+			.about_company{
+				font-size: 14px;
+				line-height: 2em;
+				padding: 0px 55px 30px 0px;
+			}
+			.social_icons{
+				padding: 30px 0px;
+				font-size: 15px;
+				a{
+					padding: 0px 5px;
+					color: #fff;
+					transition: all .3s ease 0s;
+					&:hover{
+						transition: all .3s ease 0s;
+						color: #fa7c30;
+					}
+				}
+			}
+			.subscribe{
+				.email{
+					width: 120px;
+					height: 40px;
+					font-size: 12px;
+				}
+				.button_subscribe{
+					width: 100px;
+					height: 40px;
+					font-size: 12px;
+				}
+			}
+		}
+		.blogs{
+			width: 35%;
+			.blogs_block{
+				padding: 20px  0px 0px 0px;
+				p{
+					padding: 10px 0px 10px 10px;
+					font-size: 12px;
+				}
+			}
+		}
+		.instagram{
+			width: 20%;
+			padding: 0px 0px 0px 20px;
+			.more_fotos_instagram{
+				padding-top: 10px;
+				a{
+					font-size: 12px;
+				}
+			}
+		}
+	}
+}
+}
+@media all and (max-width: 960px){
+	//Click on burger menu and burger menu on
+	body.active_burger_bar{
+		overflow: hidden;
+	}
+	.logo{
+		padding-right: 20px;
+			h1{
+				font-size: 24px;
+			}
+		}
+	button{
+		width: 100px;
+		height: 25px;
+		font-size: 8px;
+		letter-spacing: 1.5px;
+	}
+	.title{
+		h3{
+			font-size: 22px;
+		}
+		.title_sub{
+			font-size: 12px;
+			padding-bottom: 30px;
+		}
+	}
+	.wrapper{
+		width: 80%;
+	}
+header{
+	height: 380px;
+	nav{
+		position: relative;
+		padding: 20px 20px;
+			.menu_top{
+				position: fixed;
+				top: 0;
+				left: -115%;
+				height: 100vh;
+				display: block;
+				padding: 20px;
+				width: 100%;
+				background: #382f27;
+				display: flex;
+				flex-direction: column;
+				text-align: center;
+				z-index: 1;
+				overflow: auto;
+					.logo_menu{
+						display: block;
+						padding-right: 20px;
+							h1{
+								text-transform: uppercase;
+								color: #fff;
+								font-size: 42px;
+								font-family: 'Open Sans', sans-serif;
+								font-weight: 900;
+								margin-bottom: 20px;
+								span{
+									color: #fa7c30;
+									}
+							}
+						}
+			.menu{
+				display: block;
+				li{
+						padding: 10px 0px;
+						.item_link{
+							display: inline;
+							box-shadow: none;
+							font-size: 22px;
+							font-weight: 700;
+							letter-spacing: 1.5px;
+						}
+					}
+			}
+				transition: all .5s ease 0s;
+			&.active_burger_bar{
+				transition: all .5s ease 0s;
+				left: 0;
+			}
+			}
+			.burger_bar{
+				position: fixed;
+				display: block;
+				top: 30px;
+				right: 30px;
+				width: 30px;
+				height: 30px;
+				cursor: pointer;
+				z-index: 1;
+				span.line_menu{
+					display: block;
+					width: 100%;
+					height: 2px;
+					background: #fa7c30;
+					margin-top: 45%;
+					&.active_burger_bar{
+						display: none;
+					}
+				}
+				&::before, &::after{
+					position: absolute;
+					content:'';
+					left: 0;
+					width: 100%;
+					height: 2px;
+					background: #fa7c30;
+				}
+				&::before{
+					top: 0;
+				}
+				&::after{
+					bottom: 0;
+				}
+				&.active_burger_bar::before{
+					transition: all .5s ease 0s;
+					top: 14px;
+					transform: rotate(45deg);
+				}
+
+				&.active_burger_bar::after{
+					transition: all .5s ease 0s;
+					bottom: 14px;
+					transform: rotate(-45deg);
+				}
+			}
+		}
+	.banner{
+		.text{
+			padding-top: 2%;
+			.beautiful_body{
+				font-size: 38px;
+				line-height: 1em;
+			}
+			.little_text{
+				font-size: 12px;
+			}
+		}
+	.order{
+		.order_box_text{
+			width: 70%;
+			text-align: center;
+			.free_days{
+				padding: 20px 0px 10px 0px;
+				font-size: 18px;
+			}
+			.online_bookin{
+				font-size: 26px;
+			}
+		}
+	}
+	}
+}
+.welcome_fitnes{
+	height: 640px;
+	.content_about{
+		padding-top: 25%;
+		.about_text{
+			width: 50%;
+			h3{
+				font-size: 22px;
+			}
+			.text_1{
+				font-size: 12px;
+			}
+			.text_2{
+				font-size: 12px;
+			}
+		}
+		.about_img{
+			margin-right: -10%;
+		}
+	}
+}
+.programm{
+		margin: 30px 0px;
+	.section_programm{
+		.section{
+			.about_programm{
+				.title_programm{
+					font-size: 18px;
+				}
+				.text_programm{
+					font-size: 12px;
+				}
+			}
+		}
+	}
+}
+.personale_traiber{
+	.trainer_width{
+		.content{
+			h3{
+				font-size: 18px;
+			}
+			p{
+				font-size: 28px;
+			}
+		}
+	}
+}
+.trainers{
+		margin: 30px 0px;
+	.section_trainers{
+		.section{
+			.about_programm{
+				padding-top: 10px;
+				.name_trainer{
+					font-size: 18px;
+				}
+				.trainer_prof{
+					font-size: 12px;
+					padding-bottom: 10px;
+				}
+			}
+		}
+	}
+}
+.media{
+	.media_content{
+		.sector{
+			.content_media{
+				.title_media{
+					font-size: 14px;
+				}
+				.info_media{
+					font-size: 22px;
+				}
+			}
+		}
+	}
+}
+.footer{
+	width: 100%;
+	height: 100%;
+	.footer_content{
+		padding: 50px 0px;
+		flex-direction: column;
+		.folow_us{
+			width: 100%;
+			.logo{
+				padding: 30px 0px;
+			}
+			.about_company{
+				font-size: 14px;
+				line-height: 1.5em;
+				padding: 0px 0px 30px 0px;
+			}
+			.social_icons{
+				padding: 30px 0px;
+				font-size: 15px;
+				line-height: 1.5em;
+				a{
+					padding: 0px 5px;
+					color: #fff;
+					transition: all .3s ease 0s;
+					&:hover{
+						transition: all .3s ease 0s;
+						color: #fa7c30;
+					}
+				}
+			}
+			.subscribe{
+				.email{
+					width: 120px;
+					height: 40px;
+					font-size: 12px;
+				}
+				.button_subscribe{
+					width: 100px;
+					height: 40px;
+					font-size: 12px;
+				}
+			}
+		}
+		.blogs{
+			padding: 20px 0;
+			width: 100%;
+			.title_box {
+				display: inline;
+				cursor: pointer;
+				transition: all .3s ease 0s;
+				&:hover{
+					transition: all .3s ease 0s;
+					color: #fa7c30;
+				}
+			}
+			.blogs_block{
+				display: none;
+				padding: 20px  0px 0px 0px;
+				img{
+					width: 30%;
+				}
+				p{
+					padding: 20px 0px 20px 20px;
+					font-size: 14px;
+				}
+
+				&.active_block{
+					transition: all .3s ease 0s;
+					display: flex;
+				}
+			}
+		}
+		.instagram{
+			width: 100%;
+			padding: 0px 0px 0px 0px;
+			.title_box{
+				display: inline;
+				cursor: pointer;
+				transition: all .3s ease 0s;
+				&:hover{
+					transition: all .3s ease 0s;
+					color: #fa7c30;
+				}
+			}
+			.insta_block{
+				display: none;
+				margin-top: 20px;
+				&.active_block{
+					transition: all .3s ease 0s;
+					display: block;
+					img{
+						width: 19%;
+					}
+					
+				}
+			}
+			.more_fotos_instagram{
+				display: none;
+				padding-top: 10px;
+				a{
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}
+}
+@media all and (max-width: 767px){
+	.logo{
+		padding-right: 20px;
+			h1{
+				font-size: 24px;
+			}
+		}
+	button{
+		width: 95px;
+		height: 25px;
+		font-size: 8px;
+		letter-spacing: 1px;
+	}
+	.title{
+		h3{
+			font-size: 22px;
+		}
+		.title_sub{
+			font-size: 12px;
+			padding-bottom: 30px;
+		}
+	}
+header{
+	height: 300px;
+	.banner{
+		.text{
+			.beautiful_body{
+				font-size: 26px;
+			}
+			.little_text{
+				font-size: 10px;
+			}
+		}
+		.order{
+			.order_box_text{
+				width: 70%;
+				text-align: center;
+				.free_days{
+					padding: 20px 0px 10px 0px;
+					font-size: 16px;
+				}
+				.online_bookin{
+					font-size: 22px;
+				}
+				.form {
+					.people_time{
+						input{
+							height: 20px;
+							font-size: 10px;
+						}
+					}
+				} 
+			}
+		}
+	}
+}
+.welcome_fitnes{
+	height: 100%;
+	padding: 5% 0;
+	.content_about{
+		flex-direction: column-reverse;
+		.about_text{
+			width: 100%;
+			padding: 0;
+			h3{
+				font-size: 22px;
+			}
+			.text_1{
+				font-size: 12px;
+			}
+			.text_2{
+				font-size: 12px;
+			}
+		}
+		.about_img{
+			width: 30%;
+			margin-right: 0;
+		}
+	}
+}
+.programm{
+		margin: 30px 0px;
+	.section_programm{
+		.section{
+			width: 100%;
+			display: flex;
+			margin-bottom: 20px;
+			img{
+				width: 30%;object-fit: cover;
+			}
+			.about_programm{
+				.title_programm{
+					font-size: 18px;
+				}
+				.text_programm{
+					font-size: 12px;
+				}
+			}
+		}
+	}
+}
+.personale_traiber{
+	.trainer_width{
+		.content{
+			h3{
+				font-size: 18px;
+			}
+			p{
+				font-size: 28px;
+			}
+		}
+	}
+}
+.trainers{
+		margin: 30px 0px;
+	.section_trainers{
+		flex-direction: column;
+		align-items: center;
+		.section{
+			width: 40%;
+			margin-bottom: 20px;
+			.about_programm{
+				padding-top: 10px;
+				.name_trainer{
+					font-size: 18px;
+				}
+				.trainer_prof{
+					font-size: 12px;
+					padding-bottom: 10px;
+				}
+			}
+		}
+	}
+}
+.media{
+	.media_content{
+		flex-direction: column;
+		.sector{
+			width: 100%;
+			.content_media{
+				.title_media{
+					font-size: 22px;
+				}
+				.info_media{
+					font-size: 36px;
+				}
+			}
+		}
+	}
+}
+.footer{
+	.footer_content{
+		padding: 20px 0px;
+		.folow_us{
+			.subscribe{
+				.email{
+					width: 180px;
+					height: 40px;
+					font-size: 12px;
+				}
+				.button_subscribe{
+					width: 120px;
+					height: 40px;
+					font-size: 12px;
+				}
+			}
+		}
+	}
+}
+}
+@media all and (max-width: 567px){
+
+	.logo{
+			h1{
+				font-size: 20px;
+			}
+		}
+	button{
+		width: 80px;
+		height: 20px;
+		font-size: 6px;
+	}
+	.title{
+		h3{
+			font-size: 18px;
+		}
+		.title_sub{
+			font-size: 12px;
+			padding-bottom: 30px;
+		}
+	}
+header{
+	height: 200px;
+	.banner{
+		.text{
+			.beautiful_body{
+				font-size: 18px;
+			}
+			.little_text{
+				font-size: 10px;
+			}
+		}
+		.order{
+			.order_box_text{
+				width: 100%;
+				text-align: center;
+				.free_days{
+					padding: 10px 0px 5px 0px;
+					font-size: 12px;
+				}
+				.online_bookin{
+					font-size: 16px;
+				}
+				.form {
+					padding: 5px;
+					.people_time{
+						input{
+							height: 20px;
+							font-size: 6px;
+						}
+					}
+				}
+				button{
+					margin-bottom: 5px;
+				}
+			}
+			.order_box_img{
+				display: none;
+			}
+		}
+	}
+}
+.welcome_fitnes{
+	padding: 15% 0;
+	.content_about{
+		.about_text{
+			h3{
+				font-size: 18px;
+			}
+		}
+		.about_img{
+			width: 30%;
+			margin-right: 0;
+		}
+	}
+}
+.personale_traiber{
+	.trainer_width{
+		.content{
+			h3{
+				font-size: 16px;
+			}
+			p{
+				font-size: 22px;
+			}
+		}
+	}
+}
+.trainers{
+	.section_trainers{
+		.section{
+			width: 60%;
+			.about_programm{
+				.name_trainer{
+					font-size: 18px;
+				}
+				.trainer_prof{
+					font-size: 10px;
+				}
+			}
+		}
+	}
+}
+.media{
+	.media_content{
+		.sector{
+			.content_media{
+				.title_media{
+					font-size: 16px;
+				}
+				.info_media{
+					font-size: 22px;
+				}
+			}
+		}
+	}
+}
+.footer{
+	.footer_content{
+		padding: 10px 0px;
+		.folow_us{
+			.about_company{
+				font-size: 12px;
+			}
+			.subscribe{
+				.email{
+					width: 130px;
+					height: 40px;
+					font-size: 12px;
+				}
+				.button_subscribe{
+					width: 100px;
+					height: 40px;
+					font-size: 12px;
+				}
+			}
+		}
+	}
+}
+}
