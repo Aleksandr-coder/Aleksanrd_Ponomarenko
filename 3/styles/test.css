@@ -1,0 +1,45 @@
+body {
+	margin: 0;
+}
+.works{
+	max-width: 1900px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.img_work{
+	width: calc(25%);
+	display: flex;
+	position: relative;
+}
+.img_work img{
+	width: 100%;
+}
+.mask {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(233, 105, 105, 0.7);
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+div.mask:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+
+/*.works{
+    /*width: calc(25% - 3px);
+    max-width: 1900px;
+    max-height: 700px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.works img{
+    width: calc(25% - 1px);
+    height: calc(50% - 1px);
+    margin-bottom: 1px;
+    
+}*/
