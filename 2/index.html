@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="styles/all.css">
+	<link rel="stylesheet" type="text/css" href="styles/fontawesome.css">
+	<link rel="stylesheet" type="text/css" href="styles/brands.css">
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>John Doe</title>
+</head>
+<body>
+	<header class="header">
+		<img src="img/header_img.webp"alt="">
+			<div class="slanted"></div>
+			<div class="wrapper">
+				<nav class="menu_top">
+					<p class="logo">/.</p>
+					<div class="menu">
+						<input type="checkbox" id="checkbox_menu">
+						<label for="checkbox_menu">
+							<ul class="menu_touch touch">
+								<li><a href="#">About</a></li>
+								<li><a href="#">Gallery</a></li>
+								<li><a href="#">Music</a></li>
+								<li><a href="#">Contacts</a></li>
+							</ul>
+							<span class="toggle">☰</span>
+						</label>
+					</div>
+				</nav>
+				<div class="header_text">
+					<h1 class="title">Amazing Dude.<br>Amazing Life.</h1>
+					<p class="welcome">Welcome to the personal site of <strong>John Doe.</strong></b><br>A professional skier and a musician.</p>
+				</div>
+			</div>
+	</header>
+	<section class="about">
+		<div class="right_box">
+			<img src="img/about.webp" alt="">
+		</div>
+		<div class="left_box">
+			
+			<div class="conteiner"><h2>Sed faucibus quis</h2>
+				<p>Fusce bibendum luctus massa, 
+					ut tincidunt lectus tincidunt in. 
+					Nulla tristique ipsum vitae lacus 
+					ullamcorper, at dictum nunc scelerisque.
+				</p>
+			</div>
+		</div>
+	</section>
+	<section class="gallery">
+		<div class="gallery_box"><img src="img/photo_1.webp" alt=""></div>
+		<div class="gallery_box"><img src="img/photo_2.webp" alt=""></div>
+		<div class="gallery_box"><img src="img/photo_3.webp" alt=""></div>
+		<div class="gallery_box"><img src="img/photo_4.webp" alt=""></div>
+		<div class="gallery_box no_foto text">
+			<div class="conteiner">
+				<h2>Instagram</h2>
+				<p>Etiam lacus dolor, tincidunt vitae nisi in, vulputate placerat odio. Pellentesque iaculis.</p>
+				<button>View on instagram</button>
+			</div>
+		</div>
+		<div class="gallery_box foto_end"><img src="img/photo_5.webp" alt=""></div>
+		<div class="gallery_box no_foto _end"></div>
+	</section>
+	<section class="music">
+		<div class="conteiner_box">
+			<div class="music_box">
+				<img src="img/music.webp" alt="">
+				<div class="block_on_image1"></div>
+				<div class="block_on_image2">
+					<div class="conteiner">
+						<h3 class="title">Self-Effacing Rage</h3>
+						<span class="ft">FT. Fascinating Collision</span>
+						<p>Director: James G. Rohrer<br>
+							Production Company: Sycamore<br>
+							Producer: Laura S. Carlton<br>
+							Executive Producer: Jack M. Heckart<br>
+						</p>
+						<button id="mybtn" class="play" >click to play<i class="fas fa-play"></i></button>
+						<audio id="myaudio"><source src="sound/1.mp3" type="audio/mp3"></audio>
+							<script>
+						  /*Вешаем обработчик события на кнопку с идентификатором mybtn. Скрипт обязательно должен стоять
+						  после кнопки, т.к. скрипты выполняются сразу при своей загрузке, и если он выполнится раньше
+						  загрузки кнопки - он просто ее не увидит.*/
+						    document.getElementById("mybtn").onclick = function()
+						    {
+						      var myaudio = document.getElementById("myaudio");
+						      if(myaudio.paused == true)
+						      {
+						        document.getElementById("myaudio").play();
+						        this.style.backgroundColor = "#2ebd59"; //Цвет кнопки можно изменить напрямую, без всяких картинок.
+						        this.style.color = "#f9f9f9"; //Заодно меняем цвет текста для удобичитаемости
+						        //this здесь является самой кнопкой, так как функция является дочерней кнопке
+						      }
+						      else if (myaudio.paused == false)
+						      {
+						        document.getElementById("myaudio").pause();
+						        this.style.backgroundColor = "#212227";
+						        this.style.color = "#2ebd59";
+						      }
+						    }
+						</script>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="spotify_itunes">
+			<div class="spotify">
+				<div class="conteiner_spotify">
+					<h2>Spotify</h2>
+					<p>Follow me, stream and add my songs to your Spotify playlist.</p>
+					<button>follow on spotify</button>
+				</div>
+			</div>
+			<div class="itunes">
+				<div class="conteiner_itunes">
+					<h2>Itunes</h2>
+					<p>Buy and download my songs from iTunes.</p>
+					<button>buy from itunes</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container_footer">
+			<div class="left_block">
+				<h4 class="title">AMAZING DUDE.<br>AMAZING LIFE.</h4>
+				<p class="title_text">Mauris ornare lobortis arcu, at sodales dolor finibus nec. In convallis risus ligula, bibendum sagittis ante cursus vitae. Donec ornare, dui nec sagittis imperdiet, nunc eros dignissim augue, ut aliquam nibh felis sit amet leo. Vivamus eu tincidunt tellus. Vestibulum quis condimentum lectus, nec aliquet lectus. Duis sollicitudin facilisis dui ac aliquet. Phasellus tempor sollicitudin augue, id hendrerit enim gravida non. Integer consequat vel arcu quis dictum. Vestibulum viverra commodo nunc eu pellentesque. Phasellus in scelerisque elit, eu ultricies mauris.</p>
+				<span class="copyright">Ⓒ2019. all rights reserved.</span>
+			</div>
+			<div class="central_block">
+				<div class="contact">
+					<h4 class="title">CONTACT ME</h4>
+					<p class="title_text one">1242 Crestview Terrace Artesia Wells, TX 78001</p>
+					<p class="title_text">Phone: 830-676-7974 Email: halo@sitename.com</p>
+				</div>
+				<div class="folow_me">
+					<h4 class="title">FOLLOW ME ON</h4>
+					<p class="title_text"><i class="fab fa-facebook-f"></i>FACEBOOK</p>
+					<p class="title_text"><i class="fab fa-twitter"></i>TWITTER</p>
+					<p class="title_text"><i class="fab fa-instagram"></i>INSTAGRAM</p>
+					<p class="title_text"><i class="fab fa-spotify"></i>SPOTIFY</p>
+				</div>
+			</div>
+			<div class="right_block">
+				<div class="subscribe">
+					<h4 class="title">SUBSCRIBE</h4>
+					<p class="title_text">Duis sollicitudin facilisis dui ac aliquet. Phasellus tempor sollicitudin augue, id hendrerit enim gravida non. Integer consequat vel arcu quis dictum. Vestibulum viverra commodo nunc eu pellentesque.</p>
+					<button><p>ENTER YOUR EMAIL ADDRESS</p><i class="fas fa-arrow-right"></i></button>
+				</div>
+				<div class="sponsor">
+					<h4 class="title">SPONSOR</h4>
+					<div class="conteiner_logo">
+						<div class="logo"><p>Logo</p></div>
+						<div class="logo"><p>Logo</p></div>
+						<div class="logo"><p>Logo</p></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
