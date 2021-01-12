@@ -1,0 +1,1205 @@
+@import 'reset.scss';
+body{
+	position: relative;
+	font-family: 'Kayak', sans-serif;
+	background: #fff;
+	h2{
+	font-size: 36px;
+	line-height: 43px;
+	letter-spacing: -.2px;
+	color: #000;
+	span{ color: #5fb709;}
+	}
+	p.block_text{
+	font-size: 16px;
+	color: #000;
+	line-height: 1.5em;
+	margin: 20px 0px;
+	}
+	h3{
+		font-size: 23px;
+		padding: 10px 0px 20px 0px;
+		color: #5fb709;
+	}
+		p.services_text{
+		font-size: 14px;
+		line-height: 22px;
+		padding-bottom: 20px;
+	}
+}
+/*********************************СТИЛЬ КНОПОК*****************************************/
+				button{
+					position: relative;
+					width: 150px;
+					height: 50px;
+					background: #5fb709;
+					border-radius: 10px;
+					border: none;
+					overflow: hidden;
+
+					/***********************************************/
+					a{
+						position: relative;
+						font-size: 17px;
+						color: #fff;
+						text-decoration: none;
+						z-index: 4;
+					}
+					&:before{
+						content:'';
+						position: absolute;
+						width: 100%;
+						height: 100%;
+						bottom: -100%;
+						left:0;
+						background: #007200;
+						transition: all .5s;
+					}
+					&:hover{
+						box-shadow: 0px 0px 50px #007200;
+						transition-delay: .3s;
+						transition: all .5s;
+					}
+					&:hover:before{
+						bottom: 0;
+						transition: all .5s;
+					}
+				}
+/****************************************КНОПКА ВВЕРХ************************************************/
+	.to_up{
+		position: fixed;
+		display: none;
+		bottom: 5%;
+		right: 3%;
+		width: 80px;
+		height: 80px;
+		border-radius: 100%;
+		background: #5fb709;
+		color: #fff;
+		z-index: 9;
+		text-align: center;
+		line-height: 80px;
+		transition: all .5s;
+		a{
+			font-size: 18px;
+			color: #fff;
+			text-transform: uppercase;
+			text-decoration: none;
+			display: block;
+		}
+		&:hover{
+			background: #007200;
+			box-shadow: 0px 0px 50px #007200;
+			transition: all .5s;
+		}
+		&.no_active{
+			display: none;
+		}
+	}
+	.registration{
+		position: absolute;
+		top: .5%;
+		right: 5%;
+		width: 120px;
+		height: 35px;
+		background: #5fb709;
+		border-radius: 10px;
+		border: none;
+		overflow: hidden;
+		z-index: 88;
+		text-align: center;
+		/***********************************************/
+		a{
+			display: block;
+			position: relative;
+			font-size: 14px;
+			color: #fff;
+			line-height: 35px;
+			text-decoration: none;
+		}
+			&:before{
+				content:'';
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				bottom: -100%;
+				left:0;
+				background: #007200;
+				transition: all .5s;
+				}
+					&:hover{
+						box-shadow: 0px 0px 50px #007200;
+						transition-delay: .3s;
+						transition: all .5s;
+					}
+					&:hover:before{
+						bottom: 0;
+						transition: all .5s;
+					}
+	}
+	.ru, .eng{
+		position: absolute;
+		top: .5%;
+		width: 40px;
+		height: 25px;
+		background: #5fb709;
+		border-radius: 10px;
+		border: none;
+		overflow: hidden;
+		z-index: 88;
+		text-align: center;
+		/***********************************************/
+		a{
+			display: block;
+			position: relative;
+			font-size: 12px;
+			color: #fff;
+			line-height: 25px;
+			text-decoration: none;
+		}
+			&:before{
+				content:'';
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				bottom: -100%;
+				left:0;
+				background: #007200;
+				transition: all .5s;
+				}
+					&:hover{
+						box-shadow: 0px 0px 50px #007200;
+						transition-delay: .3s;
+						transition: all .5s;
+					}
+					&:hover:before{
+						bottom: 0;
+						transition: all .5s;
+					}
+	
+	}
+	.ru{
+		left: 30px;
+	}
+	.eng{
+		left: 80px;
+	}
+.index1{
+	z-index: 6;
+}
+.index2{
+	z-index: 7;
+}
+/****************************************************************************************/
+.header{
+	.container{
+		width: 100%;
+		.love_of_food{
+			position: relative;
+			background-image: url(../img/header_bg.webp);
+			background-size: 100% 100%;
+			height: 650px;
+			.header_content{
+				padding: 10% 0% 0% 10%;
+			}
+			img.food_bg{
+				position: absolute;
+				top: 0;
+				right: 0;
+				width: 65%;
+				max-width: 100%;
+				z-index: -1;
+			}
+			img.sliced{
+				position: absolute;
+				top: 50%;
+				right: 55%;
+				width: 10%;
+				z-index: -1;
+			}
+		}
+	}
+}
+.main{
+	.container{
+		.block_1{
+			position: relative;
+			height: 450px;
+			.deliver_address{
+				padding:15% 0% 0% 45%;
+				h2{
+					padding-bottom: 3%;
+				}
+				form{
+					input.text{
+						width: 350px;
+						height: 30px;
+						border: 1px solid #ccc;
+						border-radius: 20px;
+						padding: 10px;
+					}
+					input.submit{
+						position: relative;
+						margin-left: 10px;
+						width: 150px;
+						height: 50px;
+						padding: 10px;
+						border: none;
+						border-radius: 10px;
+						background: #5fb709;
+						color: #fff;
+							transition: .5s;
+						&:hover{
+							background: #007200;
+							box-shadow: 0px 0px 50px #007200;
+							transition: .5s;
+						}
+						}		
+				}
+			}
+			img.burger{
+				position: absolute;
+				top: 20%;
+				left: 10%;
+				width: 30%;
+			}
+			img.leaves{
+				position: absolute;
+				top: -5%;
+				right: 20%;
+				width: 10%;
+			}
+			.tap_to_place{
+				padding: 10% 0% 0% 45%;
+			}
+			img.table_city{
+				position: absolute;
+				right: 0;
+				top: 40%;
+				width: 10%;
+			}
+			img.mushroom{
+				position: absolute;
+				right: 30%;
+				top: -15%;
+				width: 10%;
+			}
+			img.plate{
+				position: absolute;
+				left: -5%;
+				top: 0;
+				width: 37%;
+			}
+
+			img.line_1{
+				position: absolute;
+				top: 65%;
+				left: 45%;
+				width: 5%;
+			}
+			img.line_2{
+				position: absolute;
+				top: 67%;
+				left: 45%;
+				width: 5%;
+			}
+		}
+		.block_2{
+			position: relative;
+			background-image: url(../img/main_bg.webp);
+			background-size: 100% 100%;
+			height: 950px;
+			z-index: 1;
+			img.track{
+				position: absolute;
+				left: 0;
+				top: 20%;
+				width: 100%;
+				z-index: -1;
+			}
+			img.fone_delivering{
+				position: absolute;
+				right: 20%;
+				top: 20%;
+				width: 25%;
+			}
+			img.chicory{
+				position: absolute;
+				right: 45%;
+				top: 15%;
+				width: 15%;
+			}
+			img.eats1{
+				position: absolute;
+				left: 10%;
+				bottom: 25%;
+				width: 15%;
+			}
+			img.eats2{
+				position: absolute;
+				left: 22%;
+				bottom: 18%;
+				width: 17%;
+			}
+			.point_1{
+				position: absolute;
+				top: 50%;
+				left: 10%;
+				img{
+					width: 70%;
+					object-position: 100%;
+				}
+			}
+			.point_2{
+				position: absolute;
+				top: 48%;
+				left: 50%;
+				img{
+					width: 70%;
+					object-position: 100%;
+				}
+			}
+			.point_3{
+				position: absolute;
+				top: 25%;
+				right: 10%;
+				img{
+					width: 70%;
+					object-position: 100%;
+				}
+			}
+			.track_your_flood{
+				padding: 22% 0% 0% 10%;
+			}
+			.local_find_food{
+				padding: 25% 0% 0% 10%;
+				h2{
+					padding-bottom: 20px;
+				}
+			}
+			img.egg{
+				position: absolute;
+				top: 20%;
+				right: 5%;
+				width: 15%;
+			}
+			img.fone{
+				position: absolute;
+				top: 20%;
+				right: 20%;
+				width: 25%;
+			}
+			img.cucumber{
+				position: absolute;
+				bottom: 5%;
+				left: 0%;
+				width: 30%;
+				z-index: -1;
+			}
+			img.line_1{
+				position: absolute;
+				top: 25%;
+				left: 20%;
+				width: 5%;
+			}
+			img.line_2{
+				position: absolute;
+				top: 27%;
+				left: 20%;
+				width: 5%;
+			}
+		}
+		.get_app_block{
+			position: relative;
+			background: #F9FAFA;
+			margin-top: -15%;
+			padding-top: 15%;
+			height: 650px;
+			.text_app_block{
+				position: relative;
+				padding: 8% 0% 0% 40%;
+				z-index: 1;
+				.uber_eats{
+					display: flex;
+					align-items: center;
+					.uber_block{
+						width: 118px;
+						height: 118px;
+						border-radius: 28px;
+						background: #000;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						font-size: 30px;
+						p{
+							color: #fff;
+							font-weight: 700;
+						span{
+							color: #71bf44;
+						}
+						}
+					}
+					h2{
+						padding-left: 20px;
+					}
+				}
+				.button{
+					display: flex;
+					padding-top: 50px;
+					a{
+						padding-right: 20px;
+					}
+					img{
+						width: 100%;
+						transition: all .5s;
+					}
+					& img:hover{
+						border-radius: 10px;
+						box-shadow: 0px 0px 50px #000;
+						transition: all .5s;
+					}
+				}
+			}
+			img.ets3{
+				position: absolute;
+				bottom: 5%;
+				right: 20%;
+			}
+			img.ets4{
+				position: absolute;
+				top: 20%;
+				right: 5%;
+				width: 15%;
+			}
+			img.food_on_table{
+				position: absolute;
+				top: 25%;
+				left: 0%;
+				width: 45%;
+			}
+			img.herb{
+				position: absolute;
+				bottom: 10%;
+				right: 0%;
+			}
+			img.line_1{
+				position: absolute;
+				top: 25%;
+				left: 45%;
+				width: 5%;
+			}
+			img.line_2{
+				position: absolute;
+				top: 27%;
+				left: 45%;
+				width: 5%;
+			}
+		}
+	}
+}
+.services{
+	background: #F9FAFA;
+		.services_content{
+			background-image: url(../img/services_bg.webp);
+			background-size: 100% 100%;
+			height: 650px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			.block_services{
+				margin-top: 10%;
+				padding:0px 0px 50px 90px;
+			}
+			.block_services:first-child{
+				border-right: 1px solid #ccc;
+				padding:0px 90px 50px 0px;
+			}
+			}
+}
+.footer{
+	background: #212121; 
+	height: 490px;
+	color: #fff;
+	padding-top: 130px;
+	.conteiner{
+		width: 80%;
+		margin: 0 auto;
+		.footer_content{
+			padding-top: 50px;
+			display: flex;
+			justify-content: space-between;
+			.block{
+				width: calc(20% - 2%);
+				p{
+					a{
+					color: #fff;
+					text-decoration: none;
+					padding-bottom: 35px;
+					display: block;
+					font-size: 16px;
+				}
+					}
+				.language{
+					border-bottom: 1px solid  #ccc;
+					padding: 10px 0px;
+					margin-bottom: 20px;
+					.list_language{
+						position: relative;
+						cursor: pointer;
+						a{
+							color: #fff;
+							display: inline-block;
+							padding-top: 5px;
+							text-decoration: none;
+							font-size: 16px;
+								transition: .3s;
+							&:hover{
+								color: #5fb709;
+								transition: .3s;
+							}
+						}
+						.active{
+							img.earth{
+								width: 25px;
+								margin-right: 30px;
+							}
+							img.down{
+								margin-left: 20%;
+							}
+						}
+						.no_active{
+							display: none;
+							position: absolute;
+							height: 100%;
+							margin-left: 55px;
+							transition: .5s;
+						}
+						&:hover{
+							.active{
+
+								img.down{
+									transform: rotate(180deg);
+									transition: .5s;
+								}
+							}
+							.no_active{
+								display: block;
+								transition: .5s;
+								li{
+									background: #212121;
+								}
+							}
+						}
+					}
+				}
+			}
+			.download{
+				.donload_link{
+					margin-top: 20px;
+					display: flex;
+					a{
+						margin-right: 10px;
+						img{
+						width: 100%;
+						display: block;
+					}
+					}
+					
+				}
+			}
+		}
+		.copyright{
+			padding-top: 10%;
+			color: #424242;
+		}
+	}
+}
+@media all and (max-width: 1200px){
+	body{
+	h2{
+	font-size: 24px;
+	line-height: 32px;
+	letter-spacing: -.2px;
+	}
+	p.block_text{
+	font-size: 16px;
+	line-height: 38px;
+	margin: 20px 0px;
+	}
+	h3{
+		font-size: 21px;
+		padding: 10px 0px 20px 0px;
+	}
+		p.services_text{
+		font-size: 14px;
+		line-height: 22px;
+		padding-bottom: 18px;
+	}
+}
+.header{
+	.container{
+		width: 100%;
+		.love_of_food{
+			height: 650px;
+		}
+	}
+}
+.main{
+	.container{
+		.block_1{
+			height: 650px;
+			.deliver_address{
+				form{
+					input.text{
+						width: 300px;
+						height: 30px;
+						border-radius: 20px;
+						padding: 10px;
+					}
+					input.submit{
+						margin-left: 10px;
+						width: 130px;
+						height: 50px;
+						padding: 10px;
+						}	
+				}
+			}
+		}
+		.block_2{
+			height: 650px;
+			.local_find_food{
+				h2{
+					padding-bottom: 20px;
+				}
+			}
+
+			img.cucumber{
+				position: absolute;
+				bottom: 5%;
+				left: 0%;
+				width: 20%;
+			}
+		}
+		.get_app_block{
+			height: 650px;
+			.text_app_block{
+				.uber_eats{
+					.uber_block{
+						width: 118px;
+						height: 118px;
+						border-radius: 28px;
+						font-size: 30px;
+					}
+					h2{
+						padding-left: 20px;
+					}
+				}
+				.button{
+					padding-top: 50px;
+					a{
+						padding-right: 20px;
+					}
+				}
+			}
+		}
+	}
+}
+.services{
+		.services_content{
+			height: 650px;
+			.block_services{
+				padding:0px 0px 50px 90px;
+			}
+			.block_services:first-child{
+				padding:0px 90px 50px 0px;
+			}
+		}
+}
+.footer{
+	height: 350px;
+	padding-top: 80px;
+	.conteiner{
+		.footer_content{
+			padding-top: 30px;
+			.block{
+				p{
+					a{
+					padding-bottom: 35px;
+					font-size: 16px;
+					}
+				}
+			}
+			.download{
+				.donload_link{
+					margin-top: 20px;
+					a{
+						margin-right: 10px;
+					}
+				}
+			}
+		}
+		.copyright{
+			padding-top: 2%;
+			color: #424242;
+		}
+	}
+}
+}
+
+@media all and (max-width: 991px){
+	body{
+	h2{
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: -.2px;
+	}
+	p.block_text{
+	font-size: 14px;
+	line-height: 24px;
+	margin: 10px 0px;
+	}
+	h3{
+		font-size: 16px;
+		padding: 10px 0px 20px 0px;
+	}
+		p.services_text{
+		font-size: 14px;
+		line-height: 18px;
+		padding-bottom: 14px;
+	}
+}
+button{
+		position: relative;
+		width: 120px;
+		height: 30px;
+		a{
+			font-size: 12px;
+		}
+	}
+.header{
+	.container{
+		width: 100%;
+		.love_of_food{
+			height: 350px;
+		}
+	}
+}
+.main{
+	.container{
+		.block_1{
+			height: 450px;
+			.deliver_address{
+				form{
+					input.text{
+						width: 250px;
+						height: 25px;
+						border-radius: 20px;
+						padding: 10px;
+					}
+					input.submit{
+						margin-left: 10px;
+						width: 100px;
+						height: 45px;
+						padding: 10px;
+						}	
+				}
+			}
+		}
+		.block_2{
+			height: 450px;
+			.local_find_food{
+				h2{
+					padding-bottom: 20px;
+				}
+			}
+		}
+		.get_app_block{
+			height: 450px;
+			.text_app_block{
+				.uber_eats{
+					.uber_block{
+						width: 80px;
+						height: 80px;
+						border-radius: 28px;
+						font-size: 22px;
+					}
+					h2{
+						padding-left: 20px;
+					}
+				}
+				.button{
+					padding-top: 40px;
+					img{
+						width: 70%;
+					}
+					a{
+						padding-right: 0px;
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
+.services{
+		.services_content{
+			height: 450px;
+			padding-top: 100px;
+			.block_services{
+				padding:0px 0px 30px 50px;
+			}
+			.block_services:first-child{
+				padding:0px 40px 50px 50px;
+			}
+		}
+}
+.footer{
+	height: 350px;
+	padding-top: 80px;
+	.conteiner{
+		.footer_content{
+			padding-top: 30px;
+			flex-wrap: wrap;
+			.block{
+				display: none;
+				&.language{
+					width: 40%;
+					display: block;
+				}
+				&.download{
+					width: 40%;
+					display: block;
+				}
+			}
+			.download{
+				.donload_link{
+					margin-top: 20px;
+					a{
+						margin-right: 10px;
+					}
+				}
+			}
+		}
+		.copyright{
+			padding-top: 5%;
+			color: #424242;
+		}
+	}
+}
+}
+
+@media all and (max-width: 767px){
+	body{
+	h2{
+	font-size: 14px;
+	line-height: 18px;
+	letter-spacing: -.2px;
+	}
+	p.block_text{
+	font-size: 12px;
+	line-height: 18px;
+	margin: 50px 0px;
+	}
+	h3{
+		font-size: 14px;
+		padding: 10px 0px 20px 0px;
+	}
+		p.services_text{
+		font-size: 12px;
+		line-height: 16px;
+		padding-bottom: 10px;
+	}
+}
+button{
+		position: relative;
+		width: 120px;
+		height: 30px;
+		a{
+			font-size: 12px;
+		}
+	}
+	.to_up{
+		width: 60px;
+		height: 60px;
+		
+		line-height: 60px;
+		a{
+			font-size: 18px;
+			
+		}
+	}
+.header{
+	.container{
+		width: 100%;
+		.love_of_food{
+			height: 250px;
+		}
+	}
+}
+.main{
+	.container{
+		.block_1{
+			height: 250px;
+			.deliver_address{
+				form{
+					input.text{
+						font-size: 10px;
+						width: 150px;
+						height: 15px;
+						border-radius: 10px;
+						padding: 5px;
+					}
+					input.submit{
+						font-size: 10px;
+						margin-left: 10px;
+						width: 70px;
+						height: 30px;
+						padding: 10px;
+						}	
+				}
+			}
+		}
+		.block_2{
+			height: 350px;
+			.local_find_food{
+				h2{
+					padding-bottom: 10px;
+				}
+			}
+		}
+		.get_app_block{
+			height: 250px;
+			.text_app_block{
+				.uber_eats{
+					.uber_block{
+						width: 60px;
+						height: 60px;
+						border-radius: 10px;
+						font-size: 14px;
+					}
+					h2{
+						padding-left: 20px;
+					}
+				}
+				.button{
+					padding-top: 40px;
+					img{
+						width: 70%;
+					}
+					a{
+						padding-right: 0px;
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
+.services{
+		.services_content{
+			height: 650px;
+			padding-top: 120px;
+			flex-direction: column;
+			.block_services{
+				padding:0px 0px 0px 0px;
+			}
+			.block_services:first-child{
+				padding:0px 0px 0px 0px;
+				border: none;
+			}
+		}
+}
+.footer{
+	height: 350px;
+	padding-top: 80px;
+	.conteiner{
+		.footer_content{
+			padding-top: 30px;
+			flex-wrap: wrap;
+			.block{
+				display: none;
+				&.language{
+					width: 40%;
+					display: block;
+				}
+				&.download{
+					width: 40%;
+					display: block;
+				}
+			}
+			.download{
+				.donload_link{
+					margin-top: 20px;
+					a{
+						margin-right: 10px;
+					}
+				}
+			}
+		}
+		.copyright{
+			padding-top: 5%;
+			color: #424242;
+		}
+	}
+}
+}
+
+@media all and (max-width: 567px){
+	body{
+	h2{
+	font-size: 10px;
+	line-height: 14px;
+	letter-spacing: -.2px;
+	}
+	p.block_text{
+	font-size: 10px;
+	line-height: 14px;
+	margin: 10px 0px;
+	}
+	h3{
+		font-size: 10px;
+		padding: 10px 0px 20px 0px;
+	}
+		p.services_text{
+		font-size: 10px;
+		line-height: 12px;
+		padding-bottom: 10px;
+	}
+}
+button{
+		position: relative;
+		width: 80px;
+		height: 25px;
+		a{
+			font-size: 8px;
+			line-height: 25px;
+		}
+	}
+	.to_up{
+		width: 50px;
+		height: 50px;
+		opacity: 0.7;
+		line-height: 50px;
+		a{
+			font-size: 16px;
+			
+		}
+	}
+.header{
+	.container{
+		width: 100%;
+		.love_of_food{
+			height: 150px;
+		}
+	}
+}
+.main{
+	.container{
+		.block_1{
+			height: 150px;
+			.deliver_address{
+				form{
+					input.text{
+						font-size: 8px;
+						width: 120px;
+						height: 15px;
+						border-radius: 10px;
+						padding: 5px;
+						margin-right: 10px;
+					}
+					input.submit{
+						font-size: 8px;
+						margin-left: 0px;
+						margin-top: 10px;
+						width: 60px;
+						height: 25px;
+						padding: 5px;
+						}	
+				}
+			}
+		}
+		.block_2{
+			height: 250px;
+			.local_find_food{
+				h2{
+					padding-bottom: 10px;
+				}
+			}
+		}
+		.get_app_block{
+			height: 150px;
+			.text_app_block{
+				.uber_eats{
+					.uber_block{
+						width: 40px;
+						height: 40px;
+						border-radius: 5px;
+						font-size: 10px;
+					}
+					h2{
+						padding-left: 20px;
+					}
+				}
+				.button{
+					padding-top: 40px;
+					img{
+						width: 70%;
+					}
+					a{
+						padding-right: 0px;
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
+.services{
+		.services_content{
+			height: 450px;
+			padding-top: 100px;
+			flex-direction: column;
+			.block_services{
+				padding:0px 0px 0px 0px;
+			}
+			.block_services:first-child{
+				padding:0px 0px 0px 0px;
+				border: none;
+			}
+		}
+}
+.footer{
+	height: 350px;
+	padding-top: 20px;
+	.conteiner{
+		.footer_content{
+			padding-top: 30px;
+			flex-wrap: wrap;
+			.block{
+				display: none;
+				&.language{
+					width: 100%;
+					display: block;
+				}
+				&.download{
+					padding-top: 20px;
+					width: 100%;
+					display: block;
+				}
+			}
+			.download{
+				.donload_link{
+					margin-top: 20px;
+					a{
+						margin-right: 10px;
+					}
+				}
+			}
+		}
+		.copyright{
+			padding-top: 20%;
+			color: #424242;
+		}
+	}
+}
+}

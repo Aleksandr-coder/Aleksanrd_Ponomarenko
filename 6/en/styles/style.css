@@ -1,0 +1,1468 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0-modified | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* make sure to set some focus styles for accessibility */
+:focus {
+  outline: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+input[type=search] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  box-sizing: content-box;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  max-width: 100%;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+[hidden] {
+  display: none;
+}
+
+/**
+ * 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-size: 100%;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+  outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/**
+ * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improve image quality when scaled in IE 7.
+ */
+img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */
+}
+
+/**
+ * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ */
+figure {
+  margin: 0;
+}
+
+/**
+ * Correct margin displayed oddly in IE 6/7.
+ */
+form {
+  margin: 0;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct color not being inherited in IE 6/7/8/9.
+ * 2. Correct text not wrapping in Firefox 3.
+ * 3. Correct alignment displayed oddly in IE 6/7.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  white-space: normal;
+  /* 2 */
+  *margin-left: -7px;
+  /* 3 */
+}
+
+/**
+ * 1. Correct font size not being inherited in all browsers.
+ * 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improve appearance and consistency in all browsers.
+ */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  *vertical-align: middle;
+  /* 3 */
+}
+
+/**
+ * Address Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+  *overflow: visible;
+  /* 4 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to content-box in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ * 3. Remove excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+input[type=checkbox],
+input[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *height: 13px;
+  /* 3 */
+  *width: 13px;
+  /* 3 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 3+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  position: relative;
+  font-family: "Kayak", sans-serif;
+  background: #fff;
+}
+body h2 {
+  font-size: 36px;
+  line-height: 43px;
+  letter-spacing: -0.2px;
+  color: #000;
+}
+body h2 span {
+  color: #5fb709;
+}
+body p.block_text {
+  font-size: 16px;
+  color: #000;
+  line-height: 1.5em;
+  margin: 20px 0px;
+}
+body h3 {
+  font-size: 23px;
+  padding: 10px 0px 20px 0px;
+  color: #5fb709;
+}
+body p.services_text {
+  font-size: 14px;
+  line-height: 22px;
+  padding-bottom: 20px;
+}
+
+/*********************************СТИЛЬ КНОПОК*****************************************/
+button {
+  position: relative;
+  width: 150px;
+  height: 50px;
+  background: #5fb709;
+  border-radius: 10px;
+  border: none;
+  overflow: hidden;
+  /***********************************************/
+}
+button a {
+  position: relative;
+  font-size: 17px;
+  color: #fff;
+  text-decoration: none;
+  z-index: 4;
+}
+button:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: -100%;
+  left: 0;
+  background: #007200;
+  transition: all 0.5s;
+}
+button:hover {
+  box-shadow: 0px 0px 50px #007200;
+  transition-delay: 0.3s;
+  transition: all 0.5s;
+}
+button:hover:before {
+  bottom: 0;
+  transition: all 0.5s;
+}
+
+/****************************************КНОПКА ВВЕРХ************************************************/
+.to_up {
+  position: fixed;
+  display: none;
+  bottom: 5%;
+  right: 3%;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background: #5fb709;
+  color: #fff;
+  z-index: 9;
+  text-align: center;
+  line-height: 80px;
+  transition: all 0.5s;
+}
+.to_up a {
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+}
+.to_up:hover {
+  background: #007200;
+  box-shadow: 0px 0px 50px #007200;
+  transition: all 0.5s;
+}
+.to_up.no_active {
+  display: none;
+}
+
+.registration {
+  position: absolute;
+  top: 0.5%;
+  right: 30px;
+  width: 120px;
+  height: 35px;
+  background: #5fb709;
+  border-radius: 10px;
+  border: none;
+  overflow: hidden;
+  z-index: 88;
+  text-align: center;
+  /***********************************************/
+}
+.registration a {
+  display: block;
+  position: relative;
+  font-size: 14px;
+  color: #fff;
+  line-height: 35px;
+  text-decoration: none;
+}
+.registration:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: -100%;
+  left: 0;
+  background: #007200;
+  transition: all 0.5s;
+}
+.registration:hover {
+  box-shadow: 0px 0px 50px #007200;
+  transition-delay: 0.3s;
+  transition: all 0.5s;
+}
+.registration:hover:before {
+  bottom: 0;
+  transition: all 0.5s;
+}
+
+.ru, .eng {
+  position: absolute;
+  top: 0.5%;
+  width: 40px;
+  height: 25px;
+  background: #5fb709;
+  border-radius: 10px;
+  border: none;
+  overflow: hidden;
+  z-index: 88;
+  text-align: center;
+  /***********************************************/
+}
+.ru a, .eng a {
+  display: block;
+  position: relative;
+  font-size: 12px;
+  color: #fff;
+  line-height: 25px;
+  text-decoration: none;
+}
+.ru:before, .eng:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: -100%;
+  left: 0;
+  background: #007200;
+  transition: all 0.5s;
+}
+.ru:hover, .eng:hover {
+  box-shadow: 0px 0px 50px #007200;
+  transition-delay: 0.3s;
+  transition: all 0.5s;
+}
+.ru:hover:before, .eng:hover:before {
+  bottom: 0;
+  transition: all 0.5s;
+}
+
+.ru {
+  left: 30px;
+}
+
+.eng {
+  left: 80px;
+}
+
+.index1 {
+  z-index: 6;
+}
+
+.index2 {
+  z-index: 7;
+}
+
+/****************************************************************************************/
+.header .container {
+  width: 100%;
+}
+.header .container .love_of_food {
+  position: relative;
+  background-image: url(../img/header_bg.webp);
+  background-size: 100% 100%;
+  height: 650px;
+}
+.header .container .love_of_food .header_content {
+  padding: 10% 0% 0% 10%;
+}
+.header .container .love_of_food img.food_bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 65%;
+  max-width: 100%;
+  z-index: -1;
+}
+.header .container .love_of_food img.sliced {
+  position: absolute;
+  top: 50%;
+  right: 55%;
+  width: 10%;
+  z-index: -1;
+}
+
+.main .container .block_1 {
+  position: relative;
+  height: 450px;
+}
+.main .container .block_1 .deliver_address {
+  padding: 15% 0% 0% 45%;
+}
+.main .container .block_1 .deliver_address h2 {
+  padding-bottom: 3%;
+}
+.main .container .block_1 .deliver_address form input.text {
+  width: 350px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 10px;
+}
+.main .container .block_1 .deliver_address form input.submit {
+  position: relative;
+  margin-left: 10px;
+  width: 150px;
+  height: 50px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #5fb709;
+  color: #fff;
+  transition: 0.5s;
+}
+.main .container .block_1 .deliver_address form input.submit:hover {
+  background: #007200;
+  box-shadow: 0px 0px 50px #007200;
+  transition: 0.5s;
+}
+.main .container .block_1 img.burger {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  width: 30%;
+}
+.main .container .block_1 img.leaves {
+  position: absolute;
+  top: -5%;
+  right: 20%;
+  width: 10%;
+}
+.main .container .block_1 .tap_to_place {
+  padding: 10% 0% 0% 45%;
+}
+.main .container .block_1 img.table_city {
+  position: absolute;
+  right: 0;
+  top: 40%;
+  width: 10%;
+}
+.main .container .block_1 img.mushroom {
+  position: absolute;
+  right: 30%;
+  top: -15%;
+  width: 10%;
+}
+.main .container .block_1 img.plate {
+  position: absolute;
+  left: -5%;
+  top: 0;
+  width: 37%;
+}
+.main .container .block_1 img.line_1 {
+  position: absolute;
+  top: 65%;
+  left: 45%;
+  width: 5%;
+}
+.main .container .block_1 img.line_2 {
+  position: absolute;
+  top: 67%;
+  left: 45%;
+  width: 5%;
+}
+.main .container .block_2 {
+  position: relative;
+  background-image: url(../img/main_bg.webp);
+  background-size: 100% 100%;
+  height: 950px;
+  z-index: 1;
+}
+.main .container .block_2 img.track {
+  position: absolute;
+  left: 0;
+  top: 20%;
+  width: 100%;
+  z-index: -1;
+}
+.main .container .block_2 img.fone_delivering {
+  position: absolute;
+  right: 20%;
+  top: 20%;
+  width: 25%;
+}
+.main .container .block_2 img.chicory {
+  position: absolute;
+  right: 45%;
+  top: 15%;
+  width: 15%;
+}
+.main .container .block_2 img.eats1 {
+  position: absolute;
+  left: 10%;
+  bottom: 25%;
+  width: 15%;
+}
+.main .container .block_2 img.eats2 {
+  position: absolute;
+  left: 22%;
+  bottom: 18%;
+  width: 17%;
+}
+.main .container .block_2 .point_1 {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+}
+.main .container .block_2 .point_1 img {
+  width: 70%;
+  object-position: 100%;
+}
+.main .container .block_2 .point_2 {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+}
+.main .container .block_2 .point_2 img {
+  width: 70%;
+  object-position: 100%;
+}
+.main .container .block_2 .point_3 {
+  position: absolute;
+  top: 25%;
+  right: 10%;
+}
+.main .container .block_2 .point_3 img {
+  width: 70%;
+  object-position: 100%;
+}
+.main .container .block_2 .track_your_flood {
+  padding: 22% 0% 0% 10%;
+}
+.main .container .block_2 .local_find_food {
+  padding: 25% 0% 0% 10%;
+}
+.main .container .block_2 .local_find_food h2 {
+  padding-bottom: 20px;
+}
+.main .container .block_2 img.egg {
+  position: absolute;
+  top: 20%;
+  right: 5%;
+  width: 15%;
+}
+.main .container .block_2 img.fone {
+  position: absolute;
+  top: 20%;
+  right: 20%;
+  width: 25%;
+}
+.main .container .block_2 img.cucumber {
+  position: absolute;
+  bottom: 5%;
+  left: 0%;
+  width: 30%;
+  z-index: -1;
+}
+.main .container .block_2 img.line_1 {
+  position: absolute;
+  top: 25%;
+  left: 20%;
+  width: 5%;
+}
+.main .container .block_2 img.line_2 {
+  position: absolute;
+  top: 27%;
+  left: 20%;
+  width: 5%;
+}
+.main .container .get_app_block {
+  position: relative;
+  background: #F9FAFA;
+  margin-top: -15%;
+  padding-top: 15%;
+  height: 650px;
+}
+.main .container .get_app_block .text_app_block {
+  position: relative;
+  padding: 8% 0% 0% 40%;
+  z-index: 1;
+}
+.main .container .get_app_block .text_app_block .uber_eats {
+  display: flex;
+  align-items: center;
+}
+.main .container .get_app_block .text_app_block .uber_eats .uber_block {
+  width: 118px;
+  height: 118px;
+  border-radius: 28px;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+.main .container .get_app_block .text_app_block .uber_eats .uber_block p {
+  color: #fff;
+  font-weight: 700;
+}
+.main .container .get_app_block .text_app_block .uber_eats .uber_block p span {
+  color: #71bf44;
+}
+.main .container .get_app_block .text_app_block .uber_eats h2 {
+  padding-left: 20px;
+}
+.main .container .get_app_block .text_app_block .button {
+  display: flex;
+  padding-top: 50px;
+}
+.main .container .get_app_block .text_app_block .button a {
+  padding-right: 20px;
+}
+.main .container .get_app_block .text_app_block .button img {
+  width: 100%;
+  transition: all 0.5s;
+}
+.main .container .get_app_block .text_app_block .button img:hover {
+  border-radius: 10px;
+  box-shadow: 0px 0px 50px #000;
+  transition: all 0.5s;
+}
+.main .container .get_app_block img.ets3 {
+  position: absolute;
+  bottom: 5%;
+  right: 20%;
+}
+.main .container .get_app_block img.ets4 {
+  position: absolute;
+  top: 20%;
+  right: 5%;
+  width: 15%;
+}
+.main .container .get_app_block img.food_on_table {
+  position: absolute;
+  top: 25%;
+  left: 0%;
+  width: 45%;
+}
+.main .container .get_app_block img.herb {
+  position: absolute;
+  bottom: 10%;
+  right: 0%;
+}
+.main .container .get_app_block img.line_1 {
+  position: absolute;
+  top: 25%;
+  left: 45%;
+  width: 5%;
+}
+.main .container .get_app_block img.line_2 {
+  position: absolute;
+  top: 27%;
+  left: 45%;
+  width: 5%;
+}
+
+.services {
+  background: #F9FAFA;
+}
+.services .services_content {
+  background-image: url(../img/services_bg.webp);
+  background-size: 100% 100%;
+  height: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.services .services_content .block_services {
+  margin-top: 10%;
+  padding: 0px 0px 50px 90px;
+}
+.services .services_content .block_services:first-child {
+  border-right: 1px solid #ccc;
+  padding: 0px 90px 50px 0px;
+}
+
+.footer {
+  background: #212121;
+  height: 490px;
+  color: #fff;
+  padding-top: 130px;
+}
+.footer .conteiner {
+  width: 80%;
+  margin: 0 auto;
+}
+.footer .conteiner .footer_content {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .conteiner .footer_content .block {
+  width: calc(20% - 2%);
+}
+.footer .conteiner .footer_content .block p a {
+  color: #fff;
+  text-decoration: none;
+  padding-bottom: 35px;
+  display: block;
+  font-size: 16px;
+}
+.footer .conteiner .footer_content .block .language {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0px;
+  margin-bottom: 20px;
+}
+.footer .conteiner .footer_content .block .language .list_language {
+  position: relative;
+  cursor: pointer;
+}
+.footer .conteiner .footer_content .block .language .list_language a {
+  color: #fff;
+  display: inline-block;
+  padding-top: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.footer .conteiner .footer_content .block .language .list_language a:hover {
+  color: #5fb709;
+  transition: 0.3s;
+}
+.footer .conteiner .footer_content .block .language .list_language .active img.earth {
+  width: 25px;
+  margin-right: 30px;
+}
+.footer .conteiner .footer_content .block .language .list_language .active img.down {
+  margin-left: 20%;
+}
+.footer .conteiner .footer_content .block .language .list_language .no_active {
+  display: none;
+  position: absolute;
+  height: 100%;
+  margin-left: 55px;
+  transition: 0.5s;
+}
+.footer .conteiner .footer_content .block .language .list_language:hover .active img.down {
+  transform: rotate(180deg);
+  transition: 0.5s;
+}
+.footer .conteiner .footer_content .block .language .list_language:hover .no_active {
+  display: block;
+  transition: 0.5s;
+}
+.footer .conteiner .footer_content .block .language .list_language:hover .no_active li {
+  background: #212121;
+}
+.footer .conteiner .footer_content .download .donload_link {
+  margin-top: 20px;
+  display: flex;
+}
+.footer .conteiner .footer_content .download .donload_link a {
+  margin-right: 10px;
+}
+.footer .conteiner .footer_content .download .donload_link a img {
+  width: 100%;
+  display: block;
+}
+.footer .conteiner .copyright {
+  padding-top: 10%;
+  color: #424242;
+}
+
+@media all and (max-width: 1200px) {
+  body h2 {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.2px;
+  }
+  body p.block_text {
+    font-size: 16px;
+    line-height: 38px;
+    margin: 20px 0px;
+  }
+  body h3 {
+    font-size: 21px;
+    padding: 10px 0px 20px 0px;
+  }
+  body p.services_text {
+    font-size: 14px;
+    line-height: 22px;
+    padding-bottom: 18px;
+  }
+
+  .header .container {
+    width: 100%;
+  }
+  .header .container .love_of_food {
+    height: 650px;
+  }
+
+  .main .container .block_1 {
+    height: 650px;
+  }
+  .main .container .block_1 .deliver_address form input.text {
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+    padding: 10px;
+  }
+  .main .container .block_1 .deliver_address form input.submit {
+    margin-left: 10px;
+    width: 130px;
+    height: 50px;
+    padding: 10px;
+  }
+  .main .container .block_2 {
+    height: 650px;
+  }
+  .main .container .block_2 .local_find_food h2 {
+    padding-bottom: 20px;
+  }
+  .main .container .block_2 img.cucumber {
+    position: absolute;
+    bottom: 5%;
+    left: 0%;
+    width: 20%;
+  }
+  .main .container .get_app_block {
+    height: 650px;
+  }
+  .main .container .get_app_block .text_app_block .uber_eats .uber_block {
+    width: 118px;
+    height: 118px;
+    border-radius: 28px;
+    font-size: 30px;
+  }
+  .main .container .get_app_block .text_app_block .uber_eats h2 {
+    padding-left: 20px;
+  }
+  .main .container .get_app_block .text_app_block .button {
+    padding-top: 50px;
+  }
+  .main .container .get_app_block .text_app_block .button a {
+    padding-right: 20px;
+  }
+
+  .services .services_content {
+    height: 650px;
+  }
+  .services .services_content .block_services {
+    padding: 0px 0px 50px 90px;
+  }
+  .services .services_content .block_services:first-child {
+    padding: 0px 90px 50px 0px;
+  }
+
+  .footer {
+    height: 350px;
+    padding-top: 80px;
+  }
+  .footer .conteiner .footer_content {
+    padding-top: 30px;
+  }
+  .footer .conteiner .footer_content .block p a {
+    padding-bottom: 35px;
+    font-size: 16px;
+  }
+  .footer .conteiner .footer_content .download .donload_link {
+    margin-top: 20px;
+  }
+  .footer .conteiner .footer_content .download .donload_link a {
+    margin-right: 10px;
+  }
+  .footer .conteiner .copyright {
+    padding-top: 2%;
+    color: #424242;
+  }
+}
+@media all and (max-width: 991px) {
+  body h2 {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+  }
+  body p.block_text {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 10px 0px;
+  }
+  body h3 {
+    font-size: 16px;
+    padding: 10px 0px 20px 0px;
+  }
+  body p.services_text {
+    font-size: 14px;
+    line-height: 18px;
+    padding-bottom: 14px;
+  }
+
+  button {
+    position: relative;
+    width: 120px;
+    height: 30px;
+  }
+  button a {
+    font-size: 12px;
+  }
+
+  .header .container {
+    width: 100%;
+  }
+  .header .container .love_of_food {
+    height: 350px;
+  }
+
+  .main .container .block_1 {
+    height: 450px;
+  }
+  .main .container .block_1 .deliver_address form input.text {
+    width: 250px;
+    height: 25px;
+    border-radius: 20px;
+    padding: 10px;
+  }
+  .main .container .block_1 .deliver_address form input.submit {
+    margin-left: 10px;
+    width: 100px;
+    height: 45px;
+    padding: 10px;
+  }
+  .main .container .block_2 {
+    height: 450px;
+  }
+  .main .container .block_2 .local_find_food h2 {
+    padding-bottom: 20px;
+  }
+  .main .container .get_app_block {
+    height: 450px;
+  }
+  .main .container .get_app_block .text_app_block .uber_eats .uber_block {
+    width: 80px;
+    height: 80px;
+    border-radius: 28px;
+    font-size: 22px;
+  }
+  .main .container .get_app_block .text_app_block .uber_eats h2 {
+    padding-left: 20px;
+  }
+  .main .container .get_app_block .text_app_block .button {
+    padding-top: 40px;
+  }
+  .main .container .get_app_block .text_app_block .button img {
+    width: 70%;
+  }
+  .main .container .get_app_block .text_app_block .button a {
+    padding-right: 0px;
+    width: 100%;
+  }
+
+  .services .services_content {
+    height: 450px;
+    padding-top: 100px;
+  }
+  .services .services_content .block_services {
+    padding: 0px 0px 30px 50px;
+  }
+  .services .services_content .block_services:first-child {
+    padding: 0px 40px 50px 50px;
+  }
+
+  .footer {
+    height: 350px;
+    padding-top: 80px;
+  }
+  .footer .conteiner .footer_content {
+    padding-top: 30px;
+    flex-wrap: wrap;
+  }
+  .footer .conteiner .footer_content .block {
+    display: none;
+  }
+  .footer .conteiner .footer_content .block.language {
+    width: 40%;
+    display: block;
+  }
+  .footer .conteiner .footer_content .block.download {
+    width: 40%;
+    display: block;
+  }
+  .footer .conteiner .footer_content .download .donload_link {
+    margin-top: 20px;
+  }
+  .footer .conteiner .footer_content .download .donload_link a {
+    margin-right: 10px;
+  }
+  .footer .conteiner .copyright {
+    padding-top: 5%;
+    color: #424242;
+  }
+}
+@media all and (max-width: 767px) {
+  body h2 {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.2px;
+  }
+  body p.block_text {
+    font-size: 12px;
+    line-height: 18px;
+    margin: 50px 0px;
+  }
+  body h3 {
+    font-size: 14px;
+    padding: 10px 0px 20px 0px;
+  }
+  body p.services_text {
+    font-size: 12px;
+    line-height: 16px;
+    padding-bottom: 10px;
+  }
+
+  button {
+    position: relative;
+    width: 120px;
+    height: 30px;
+  }
+  button a {
+    font-size: 12px;
+  }
+
+  .to_up {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+  }
+  .to_up a {
+    font-size: 18px;
+  }
+
+  .header .container {
+    width: 100%;
+  }
+  .header .container .love_of_food {
+    height: 250px;
+  }
+
+  .main .container .block_1 {
+    height: 250px;
+  }
+  .main .container .block_1 .deliver_address form input.text {
+    font-size: 10px;
+    width: 150px;
+    height: 15px;
+    border-radius: 10px;
+    padding: 5px;
+  }
+  .main .container .block_1 .deliver_address form input.submit {
+    font-size: 10px;
+    margin-left: 10px;
+    width: 70px;
+    height: 30px;
+    padding: 10px;
+  }
+  .main .container .block_2 {
+    height: 350px;
+  }
+  .main .container .block_2 .local_find_food h2 {
+    padding-bottom: 10px;
+  }
+  .main .container .get_app_block {
+    height: 250px;
+  }
+  .main .container .get_app_block .text_app_block .uber_eats .uber_block {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+  .main .container .get_app_block .text_app_block .uber_eats h2 {
+    padding-left: 20px;
+  }
+  .main .container .get_app_block .text_app_block .button {
+    padding-top: 40px;
+  }
+  .main .container .get_app_block .text_app_block .button img {
+    width: 70%;
+  }
+  .main .container .get_app_block .text_app_block .button a {
+    padding-right: 0px;
+    width: 100%;
+  }
+
+  .services .services_content {
+    height: 650px;
+    padding-top: 120px;
+    flex-direction: column;
+  }
+  .services .services_content .block_services {
+    padding: 0px 0px 0px 0px;
+  }
+  .services .services_content .block_services:first-child {
+    padding: 0px 0px 0px 0px;
+    border: none;
+  }
+
+  .footer {
+    height: 350px;
+    padding-top: 80px;
+  }
+  .footer .conteiner .footer_content {
+    padding-top: 30px;
+    flex-wrap: wrap;
+  }
+  .footer .conteiner .footer_content .block {
+    display: none;
+  }
+  .footer .conteiner .footer_content .block.language {
+    width: 40%;
+    display: block;
+  }
+  .footer .conteiner .footer_content .block.download {
+    width: 40%;
+    display: block;
+  }
+  .footer .conteiner .footer_content .download .donload_link {
+    margin-top: 20px;
+  }
+  .footer .conteiner .footer_content .download .donload_link a {
+    margin-right: 10px;
+  }
+  .footer .conteiner .copyright {
+    padding-top: 5%;
+    color: #424242;
+  }
+}
+@media all and (max-width: 567px) {
+  body h2 {
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: -0.2px;
+  }
+  body p.block_text {
+    font-size: 10px;
+    line-height: 14px;
+    margin: 10px 0px;
+  }
+  body h3 {
+    font-size: 10px;
+    padding: 10px 0px 20px 0px;
+  }
+  body p.services_text {
+    font-size: 10px;
+    line-height: 12px;
+    padding-bottom: 10px;
+  }
+
+  button {
+    position: relative;
+    width: 80px;
+    height: 25px;
+  }
+  button a {
+    font-size: 8px;
+    line-height: 25px;
+  }
+
+  .to_up {
+    width: 50px;
+    height: 50px;
+    opacity: 0.7;
+    line-height: 50px;
+  }
+  .to_up a {
+    font-size: 16px;
+  }
+
+  .header .container {
+    width: 100%;
+  }
+  .header .container .love_of_food {
+    height: 150px;
+  }
+
+  .main .container .block_1 {
+    height: 150px;
+  }
+  .main .container .block_1 .deliver_address form input.text {
+    font-size: 8px;
+    width: 120px;
+    height: 15px;
+    border-radius: 10px;
+    padding: 5px;
+    margin-right: 10px;
+  }
+  .main .container .block_1 .deliver_address form input.submit {
+    font-size: 8px;
+    margin-left: 0px;
+    margin-top: 10px;
+    width: 60px;
+    height: 25px;
+    padding: 5px;
+  }
+  .main .container .block_2 {
+    height: 250px;
+  }
+  .main .container .block_2 .local_find_food h2 {
+    padding-bottom: 10px;
+  }
+  .main .container .get_app_block {
+    height: 150px;
+  }
+  .main .container .get_app_block .text_app_block .uber_eats .uber_block {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 10px;
+  }
+  .main .container .get_app_block .text_app_block .uber_eats h2 {
+    padding-left: 20px;
+  }
+  .main .container .get_app_block .text_app_block .button {
+    padding-top: 40px;
+  }
+  .main .container .get_app_block .text_app_block .button img {
+    width: 70%;
+  }
+  .main .container .get_app_block .text_app_block .button a {
+    padding-right: 0px;
+    width: 100%;
+  }
+
+  .services .services_content {
+    height: 450px;
+    padding-top: 100px;
+    flex-direction: column;
+  }
+  .services .services_content .block_services {
+    padding: 0px 0px 0px 0px;
+  }
+  .services .services_content .block_services:first-child {
+    padding: 0px 0px 0px 0px;
+    border: none;
+  }
+
+  .footer {
+    height: 350px;
+    padding-top: 20px;
+  }
+  .footer .conteiner .footer_content {
+    padding-top: 30px;
+    flex-wrap: wrap;
+  }
+  .footer .conteiner .footer_content .block {
+    display: none;
+  }
+  .footer .conteiner .footer_content .block.language {
+    width: 100%;
+    display: block;
+  }
+  .footer .conteiner .footer_content .block.download {
+    padding-top: 20px;
+    width: 100%;
+    display: block;
+  }
+  .footer .conteiner .footer_content .download .donload_link {
+    margin-top: 20px;
+  }
+  .footer .conteiner .footer_content .download .donload_link a {
+    margin-right: 10px;
+  }
+  .footer .conteiner .copyright {
+    padding-top: 20%;
+    color: #424242;
+  }
+}
