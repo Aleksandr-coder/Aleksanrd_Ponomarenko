@@ -1,0 +1,55 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
+
+.block{
+  position: absolute;
+  top: 323px;
+  left: 426px;
+  width: 30px;
+  height: 28px;
+  background: #fff;
+  border-radius: 50%;
+   box-shadow: 0px 0px 50px 50px rgba(255, 255, 255, 1);
+}
+.block {
+  animation-name: blinker;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(1.0,2.0,0,1.0);
+  animation-duration: 3s;
+  -webkit-animation-name: blinker;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: cubic-bezier(1.0,2.0,0,1.0);
+  -webkit-animation-duration: 3s;
+}
+.block2{
+  position: absolute;
+  top: 322px;
+  left: 753px;
+  width: 30px;
+  height: 28px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0px 0px 50px 50px rgba(255, 255, 255, 1);
+}
+.block2{
+  animation-name: blinker;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(1.0,2.0,0,1.0);
+  animation-duration: 3s;
+  -webkit-animation-name: blinker;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: cubic-bezier(1.0,2.0,0,1.0);
+  -webkit-animation-duration: 3s;
+}
+ 
+@keyframes blinker {
+  from { opacity: 1.0; }
+  to { opacity: 0.0; }
+}
+ 
+@-webkit-keyframes blinker {
+  from { opacity: 1.0; }
+  to { opacity: 0.0; }
+}
+
