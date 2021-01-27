@@ -48,7 +48,7 @@ body{
 		transform: translate(0px, -50px);
 		transition: all .8s ease 0s;
 		opacity: 0;
-		span{
+		.menu_bar{
 			display: none;
 		}
 		.menu_list{
@@ -1546,6 +1546,7 @@ body{
 				z-index: 7;
 				overflow: hidden;
 			.line{
+				display: block;
 				height: 2px;
 				width: 100%;
 				background: #7492ec;

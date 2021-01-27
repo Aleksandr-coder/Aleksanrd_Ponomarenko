@@ -409,7 +409,7 @@ body {
   transition: all 0.8s ease 0s;
   opacity: 0;
 }
-.header .nav span {
+.header .nav .menu_bar {
   display: none;
 }
 .header .nav .menu_list {
@@ -1722,6 +1722,7 @@ body {
     overflow: hidden;
   }
   body .header .nav .menu_bar .line {
+    display: block;
     height: 2px;
     width: 100%;
     background: #7492ec;
