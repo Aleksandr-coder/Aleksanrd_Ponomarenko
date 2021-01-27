@@ -444,6 +444,26 @@ body{
 						transition: all .8s ease .3s;
 					}
 				}
+				&.eleven{
+					transform: translate(0, 100px);
+					opacity: 0;
+					transition: all .8s ease 0s;
+					&._active{
+						transform: translate(0, 0px);
+						opacity: 1;
+						transition: all .8s ease .6s;
+					}
+				}
+				&.twelve{
+					transform: translate(0, 100px);
+					opacity: 0;
+					transition: all .8s ease 0s;
+					&._active{
+						transform: translate(0, 0px);
+						opacity: 1;
+						transition: all .8s ease .9s;
+					}
+				}
 			}
 		}
 	}
@@ -483,6 +503,8 @@ body{
 			padding-bottom: 50px;
 			.map{
 				iframe{
+					width: 400px;
+					height: 200px;
 					border-radius: 20px;
 				}
 			}

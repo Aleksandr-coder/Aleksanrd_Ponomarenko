@@ -857,6 +857,8 @@ body {
   padding-bottom: 50px;
 }
 .contacts .container .contacts_block .map iframe {
+  width: 400px;
+  height: 200px;
   border-radius: 20px;
 }
 .contacts .container .contacts_block .social_contacts {
