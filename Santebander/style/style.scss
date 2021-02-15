@@ -19,7 +19,7 @@ body{
 
 .header{
 	position: relative;
-	background: url('../img/header_background.png');
+	background: url('../img/header_background.webp');
 	background-size: 100% 100%;
 	z-index: 1;
 	.flag{
@@ -613,9 +613,11 @@ body{
 						background: #E5EEFF;
 						text-align: center;
 						.poduct_name{
-							font-size: calc(8px + 14*(100vw / 1920));
+							font-size: calc(8px + 12*(100vw / 1920));
 						}
 						button{
+							color: #fff;
+							font-size: calc(6px + 10*(100vw / 1920));
 							margin-top: 10px;
 							display: flex;
 							width: 100%;
@@ -642,10 +644,6 @@ body{
 									width: 50%;
 
 								}
-							}
-							p{
-								color: #fff;
-								font-size: calc(6px + 10*(100vw / 1920));
 							}
 						}
 					}
@@ -775,10 +773,6 @@ body{
 		width: 90%;
 	}
 	.header{
-		position: relative;
-		background: url('../img/header_background.png');
-		background-size: 100% 100%;
-		z-index: 1;
 		.logo_and_menu{	
 			.navbar{
 				.container-fluid{
@@ -833,11 +827,22 @@ body{
 							display: flex;
 							padding: 40px;
 							background: #fff;
+							.logo{
+								.logo_title{
+									padding: 0 10px;
+									font-size: calc(6px + 10*(100vw / 1920));
+									.logo_text{
+										font-size: calc(10px + 12*(100vw / 1920));
+										font-weight: 900;
+									}
+								}
+							}
 						}
 						.login_cart{
 							margin: 40px 0px;
 							display: flex;
 							justify-content: space-evenly;
+							cursor: pointer;
 							.cart_login_block{
 								display: flex;
 								align-items: center;
@@ -900,7 +905,7 @@ body{
 						display: flex;
 						justify-content: center;
 						align-items: center;
-						background: url(../img/flag.png);
+						background: url(../img/flag.webp);
 						background-size: 100% 100%;
 						.support_img{
 							width: 200px;
@@ -945,7 +950,6 @@ body{
 							height: 100%;
 							justify-content: center;
 							align-items: center;
-							background: url(../img/flag.png);
 							background-size: 100% 100%;
 							.support_img{
 								width: 150px;
@@ -1048,7 +1052,8 @@ body{
 									font-size: 16px;
 								}
 								button{
-									p{
+										color: #fff;
+									span{
 										font-size: 16px;
 									}
 								}
@@ -1138,7 +1143,6 @@ body{
 						height: 100%;
 						justify-content: center;
 						align-items: center;
-						background: url(../img/flag.png);
 						background-size: 100% 100%;
 						.support_img{
 							width: 100px;

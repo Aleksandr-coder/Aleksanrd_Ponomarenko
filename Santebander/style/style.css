@@ -375,7 +375,7 @@ body {
 
 .header {
   position: relative;
-  background: url("../img/header_background.png");
+  background: url("../img/header_background.webp");
   background-size: 100% 100%;
   z-index: 1;
 }
@@ -948,9 +948,11 @@ body {
   text-align: center;
 }
 .sector_mein .section .section .product .product_block .product_footer .poduct_name {
-  font-size: calc(8px + 14*(100vw / 1920));
+  font-size: calc(8px + 12*(100vw / 1920));
 }
 .sector_mein .section .section .product .product_block .product_footer button {
+  color: #fff;
+  font-size: calc(6px + 10*(100vw / 1920));
   margin-top: 10px;
   display: flex;
   width: 100%;
@@ -977,10 +979,6 @@ body {
 }
 .sector_mein .section .section .product .product_block .product_footer button .cart_button img {
   width: 50%;
-}
-.sector_mein .section .section .product .product_block .product_footer button p {
-  color: #fff;
-  font-size: calc(6px + 10*(100vw / 1920));
 }
 .sector_mein .section .section .product .product_block:hover {
   transition: all 0.3s;
@@ -1087,12 +1085,6 @@ body {
     width: 90%;
   }
 
-  .header {
-    position: relative;
-    background: url("../img/header_background.png");
-    background-size: 100% 100%;
-    z-index: 1;
-  }
   .header .logo_and_menu .navbar .container-fluid .navbar-toggler {
     position: fixed;
     z-index: 9999;
@@ -1146,10 +1138,19 @@ body {
     padding: 40px;
     background: #fff;
   }
+  .header .logo_and_menu .navbar .container-fluid .navbar-nav .logo_mobile .logo .logo_title {
+    padding: 0 10px;
+    font-size: calc(6px + 10*(100vw / 1920));
+  }
+  .header .logo_and_menu .navbar .container-fluid .navbar-nav .logo_mobile .logo .logo_title .logo_text {
+    font-size: calc(10px + 12*(100vw / 1920));
+    font-weight: 900;
+  }
   .header .logo_and_menu .navbar .container-fluid .navbar-nav .login_cart {
     margin: 40px 0px;
     display: flex;
     justify-content: space-evenly;
+    cursor: pointer;
   }
   .header .logo_and_menu .navbar .container-fluid .navbar-nav .login_cart .cart_login_block {
     display: flex;
@@ -1211,7 +1212,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(../img/flag.png);
+    background: url(../img/flag.webp);
     background-size: 100% 100%;
   }
   .header .logo_and_menu .navbar .container-fluid .contacts .support_img {
@@ -1249,7 +1250,6 @@ body {
     height: 100%;
     justify-content: center;
     align-items: center;
-    background: url(../img/flag.png);
     background-size: 100% 100%;
   }
   .header .logo_and_menu .navbar .container-fluid .contacts .support_img {
@@ -1331,7 +1331,10 @@ body {
   .sector_mein .section .section .product .product_block .product_footer .poduct_name {
     font-size: 16px;
   }
-  .sector_mein .section .section .product .product_block .product_footer button p {
+  .sector_mein .section .section .product .product_block .product_footer button {
+    color: #fff;
+  }
+  .sector_mein .section .section .product .product_block .product_footer button span {
     font-size: 16px;
   }
   .sector_mein .section .article .block .title_block h3 {
@@ -1394,7 +1397,6 @@ body {
     height: 100%;
     justify-content: center;
     align-items: center;
-    background: url(../img/flag.png);
     background-size: 100% 100%;
   }
   .header .logo_and_menu .navbar .container-fluid .contacts .support_img {
