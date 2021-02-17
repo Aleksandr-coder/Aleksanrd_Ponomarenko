@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style/bootstrap.min.css">
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="shortcut icon" href="img/All-in-Pack.png" type="image/ico">
+	<title>Sante bander</title>
+</head>
+<body>
+
+<header class="header container-fluid p-0">
+	<img class="flag" src="img/flag.png" alt="">
+	<div class="wrapper container-fluid p-0">
+		<div class="logo_and_menu container-fluid p-0">
+			<div class="logo col-sm-3 p-0">
+				<div class="img_logo">
+					<img src="img/logo.png" alt="">
+				</div>
+				<div class="logo_title">
+					<h1 class="logo_text">Sante bander</h1>
+					<p>pharmacie web en ligne <img src="img/flag_logo.png" alt=""></p>
+				</div>	
+			</div>
+			<nav class="navbar navbar-expand-lg navbar-light col-sm-9 p-0">
+				<div class="container-fluid p-0">
+    				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      				<span class="navbar-toggler-icon"></span>
+    				</button>
+	    			<div class="collapse navbar-collapse" id="navbarNav">
+	      				<ul class="navbar-nav">
+	      					<li class="logo_mobile">
+	      						<ul class="nav-item">
+	      							<li class="logo">
+										<a href="#" class="img_logo">
+											<img src="img/logo.png" alt="">
+										</a>
+										<ul class="logo_title">
+											<li class="logo_text">Sante bander</li>
+											<li>pharmacie web en ligne <img src="img/flag_logo.png" alt=""></li>
+										</ul>
+									</li>
+	      						</ul>
+	      					</li>
+	      					<li class="login_cart_mobile">
+								<ul class="cart_login_block">
+										<li class="cart" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="img/login.svg" alt="" ></li>
+									<li class="money">
+										<p></p>
+									</li>
+								</ul>
+								<ul class="cart_login_block">
+										<li class="cart"><img src="img/cart.svg" alt="">
+										</li>
+									<li class="money">
+										Panier de course
+									</li>
+								</ul>
+					        </li>
+	        				<li class="nav-item">
+	          					<a class="nav-link active" aria-current="page" href="#">Accueil</a>
+	        				</li>
+	       					 <li class="nav-item">
+	          					<a class="nav-link" href="#">Questions et Réponses</a>
+	        				</li>
+					        <li class="nav-item">
+					        	<a class="nav-link" href="#">Comment Acheter</a>
+					        </li>
+					        <li class="nav-item">
+					        	<a class="nav-link" href="#"> Livraison Contact</a>
+					        </li>
+					        <li class="nav-item">
+					        	<a class="nav-link" href="#">Catégorie</a>
+					        </li>
+					        <li class="nav-item">
+					        	<a class="nav-link" href="#">Blog</a>
+					        </li>
+					       	<li class="login">
+								<button class="cart"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+									<img src="img/login.svg" alt="">
+								</button>
+								<ul class="money">
+									<li>Mon compte</li>
+								</ul>
+							</li>
+				      	</ul>
+	    			</div>
+  				</div>
+			</nav>
+		</div>
+		<div class="content_header container-fluid p-0">
+			<div class="left_block col-sm-3 p-0">
+				<div class="contacts">
+					<div class="support_img">
+						<img src="img/support.svg" alt="">
+						<p class="support_title">Soutien</p>
+						<p class="support_time">9:00 - 17:00</p>
+					</div>
+					<div class="support_tell">
+						<img src="img/tell.png" alt="">
+					</div>
+				</div>
+				<div class="cart_block">
+						<button class="cart">
+							<img src="img/cart.svg" alt="">
+						</button>
+					<div class="cart_text">
+						<p>Panier de course</p>
+					</div>
+				</div>
+			</div>
+			<div class="baner col-sm-9 p-0">
+				<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+					<div class="carousel-inner">
+				    	<div class="carousel-item active">
+				      		<img src="img/banner_1.svg" class="d-block w-100" alt="">
+				    	</div>
+				    	<div class="carousel-item">
+				      		<img src="img/banner_2.svg" class="d-block w-100" alt="">
+				    	</div>
+				    	<div class="carousel-item">
+				      		<img src="img/banner_3.svg" class="d-block w-100" alt="">
+				    	</div>
+				  	</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<main>
+		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+			    <div class="modal-content">
+			    	<div class="modal-header">
+				        <h5 id="exampleModalLabel">Formulaire de connexion</h5>
+				        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			    	</div>
+				    <div class="modal-body">
+				        <form>
+				        	<div class="mb-3">
+					            <label class="col-form-label mail_icon"><img src="img/mail.svg" alt=""></label>
+					            <input type="text" class="form-control" id="recipient-name_1" placeholder="Email">
+				        	</div>
+					        <div class="mb-3">
+					            <label class="col-form-label pass_icon"><img src="img/passe.svg" alt=""></label>
+					            <input type="password" class="form-control" id="recipient-name_2" placeholder="Mot de passe">
+					        </div>
+				        </form>
+				    </div>
+				    <div class="modal-footer">
+				        <button type="button" class="connect"><img src="img/connect.svg" alt="">Connexion</button>
+				    </div>
+			    </div>
+			</div>
+		</div>
+	<section class="wrapper sector_mein row p-0 g-0">
+
+		<div id="sidebar" class="col-md-3">
+			<div class="play">
+				<img src="img/pay_.png" alt="">
+			</div>
+			<div class="products">
+				<p>Products</p>
+			</div>
+			<div class="accordion accordion-flush" id="accordionExample_1">
+				<div class="accordion-item">
+				    <h2 class="accordion-header" id="headingOne">
+				      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+				        Top erectiepillen
+				      </button>
+				    </h2>
+				    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample_1">
+				    	<div class="accordion-body">
+					        <div class="product_sidebar item_1 active">
+					        	<a class="link_product" href="#">Viagra Original</a>
+					        </div>
+					        <div class="product_sidebar item_2">
+					        	<a class="link_product" href="#">Viagra Oral Jelly</a>
+					        </div>
+					        <div class="product_sidebar item_3">
+					        	<a class="link_product" href="#">Viagra Professional</a>
+					        </div>
+					        <div class="product_sidebar item_4">
+					        	<a class="link_product" href="#">Viagra Soft</a>
+					        </div>
+					        <div class="product_sidebar item_5">
+					        	<a class="link_product" href="#">Viagra Super Active</a>
+					        </div>
+					        <div class="product_sidebar item_6">
+					        	<a class="link_product" href="#">Viagra Pour Femme</a>
+					        </div>
+				    	</div>
+				    </div>
+				</div>
+			</div>
+			<div class="accordion accordion-flush" id="accordionExample_2">
+				<div class="accordion-item">
+				    <h2 class="accordion-header" id="headingTwo">
+				    	<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+				        Tadalafit
+				    	</button>
+				    </h2>
+				    <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample_2">
+				       <div class="accordion-body">
+				        <div class="product_sidebar item_7">
+				        	<a class="link_product" href="#">Cialis Générique</a>
+				        </div>
+				        <div class="product_sidebar item_8">
+				        	<a class="link_product" href="#">Cialis Original</a>
+				        </div>
+				        <div class="product_sidebar item_9">
+				        	<a class="link_product" href="#">Cialis Quotidien</a>
+				        </div>
+				        <div class="product_sidebar item_10">
+				        	<a class="link_product" href="#">Cialis Super Active</a>
+				        </div>
+				        <div class="product_sidebar item_11">
+				        	<a class="link_product" href="#">Cialis Professional</a>
+				        </div>
+				        <div class="product_sidebar item_12">
+				        	<a class="link_product" href="#">Cialis Soft</a>
+				        </div>
+				        <div class="product_sidebar item_13">
+				        	<a class="link_product" href="#">Cialis Noir</a>
+				        </div>
+				        <div class="product_sidebar item_14">
+				        	<a class="link_product" href="#">Sildalis</a>
+				        </div>
+				        <div class="product_sidebar item_15">
+				        	<a class="link_product" href="#">Tadora</a>
+				        </div>
+				      </div>
+				    </div>
+				</div>
+			</div>
+			<div class="accordion accordion-flush" id="accordionExample_3">
+				<div class="accordion-item">
+				    <h2 class="accordion-header" id="headingThree">
+				    	<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseTwo">
+				        Sidenafil
+				    	</button>
+				    </h2>
+				    <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample_3">
+				        <div class="accordion-body">
+					        <div class="product_sidebar item_16">
+					        	<a class="link_product" href="#">Viagra Générique</a>
+					        </div>
+					        <div class="product_sidebar item_17">
+					        	<a class="link_product" href="#">Viagra Original</a>
+					        </div>
+					        <div class="product_sidebar item_18">
+					        	<a class="link_product" href="#">Viagra Oral Jelly</a>
+					        </div>
+					        <div class="product_sidebar item_19">
+					        	<a class="link_product" href="#">Viagra Professional</a>
+					        </div>
+					        <div class="product_sidebar item_20">
+					        	<a class="link_product" href="#">Viagra Soft</a>
+					        </div>
+					        <div class="product_sidebar item_21">
+					        	<a class="link_product" href="#">Viagra Super Active</a>
+					        </div>
+					        <div class="product_sidebar item_22">
+					        	<a class="link_product" href="#">Viagra Pour Femme</a>
+					        </div>
+					        <div class="product_sidebar item_23">
+					        	<a class="link_product" href="#">Kamagra</a>
+					        </div>
+					        <div class="product_sidebar item_24">
+					        	<a class="link_product" href="#">Kamagra Oral Jelly</a>
+					        </div>
+					        <div class="product_sidebar item_25">
+					        	<a class="link_product" href="#">Kamagra Gold</a>
+					        </div>
+					        <div class="product_sidebar item_26">
+					        	<a class="link_product" href="#">Super Kamagra</a>
+					        </div>
+					        <div class="product_sidebar item_27">
+					        	<a class="link_product" href="#">Super P-force</a>
+					        </div>
+					        <div class="product_sidebar item_28">
+					        	<a class="link_product" href="#">Cenforce</a>
+					        </div>
+				      </div>
+				    </div>
+				</div>
+			</div>
+			<div class="livraison">
+				<p>Livraison</p>
+			</div>
+			<div class="delivery">
+				<img src="img/3laposte.png" alt="">
+				<img src="img/7ems_1.png" alt="">
+				<img src="img/2correos_logo.png" alt="">
+				<img src="img/airmail_service-mini.png" alt="">
+				<img class="img_auto" src="img/4deutsche_post.png" alt="">
+				<img src="img/6royal.png" alt="">
+				<img src="img/5posten.png" alt="">
+				<img class="img_auto" src="img/1poste-italiane.png" alt="">
+			</div>
+		</div>
+
+		<section class="section container-fluid col-sm-9 p-0 ">
+					<div class="brands px-4">
+						<div class="img_block"><img src="img/viagra.png" alt="..."></div>
+				    	<div class="img_block"><img src="img/cialis.png" alt="..."></div>
+				    	<div class="img_block"><img src="img/kamagra.png" alt="..."></div>
+				    	<div class="img_block"><img src="img/levitra.png" alt="..."></div>
+				    	<div class="img_block"><img src="img/priligy.png" alt="..."></div>
+				    	<div class="img_block"><img src="img/lovegra.png"  alt="..."></div>
+					</div>    	
+			<section class="section container-fluid p-4">
+				<div class="row g-4">
+					<div class="product col-md-4 ">
+						<div class="product_block p-0">
+							<div class="img_product">
+								<img src="img/Vega.png" alt="">
+								<div class="discount"><p>-25%</p></div>
+							</div>
+							<div class="product_footer p-3">
+								<p class="poduct_name">Viagra Generique</p>
+								<a href="#"><span class="cart_button"><img src="img/cart.svg" alt=""></span>Acheter</a>	
+							</div>
+						</div>
+					</div>
+					<div class="product col-md-4 ">
+						<div class="product_block p-0">
+							<div class="img_product">
+								<img src="img/Vega_2.png" alt="">
+								<div class="discount"><p>-25%</p></div>
+							</div>
+							<div class="product_footer p-3">
+								<p class="poduct_name">Cialis Generique</p>
+								<a href="#"><span class="cart_button"><img src="img/cart.svg" alt=""></span>Acheter</a>	
+							</div>
+						</div>
+					</div>
+					<div class="product col-md-4 ">
+						<div class="product_block p-0">
+							<div class="img_product">
+								<img src="img/Vega3.png" alt="">
+								<div class="discount"><p>-25%</p></div>
+							</div>
+							<div class="product_footer p-3">
+								<p class="poduct_name">Levitra Generique</p>
+								<a href="#"><span class="cart_button"><img src="img/cart.svg" alt=""></span>Acheter</a>	
+							</div>
+						</div>
+					</div>
+					<div class="product col-md-4 ">
+						<div class="product_block p-0">
+							<div class="img_product">
+								<img src="img/Vega.png" alt="">
+								<div class="discount"><p>-25%</p></div>
+							</div>
+							<div class="product_footer p-3">
+								<p class="poduct_name">Viagra Generique</p>
+								<a href="#"><span class="cart_button"><img src="img/cart.svg" alt=""></span>Acheter</a>	
+							</div>
+						</div>
+					</div>
+					<div class="product col-md-4 ">
+						<div class="product_block p-0">
+							<div class="img_product">
+								<img src="img/Vega_2.png" alt="">
+								<div class="discount"><p>-25%</p></div>
+							</div>
+							<div class="product_footer p-3">
+								<p class="poduct_name">Cialis Generique</p>
+								<a href="#"><span class="cart_button"><img src="img/cart.svg" alt=""></span>Acheter</a>	
+							</div>
+						</div>
+					</div>
+					<div class="product col-md-4 ">
+						<div class="product_block p-0">
+							<div class="img_product">
+								<img src="img/Vega3.png" alt="">
+								<div class="discount"><p>-25%</p></div>
+							</div>
+							<div class="product_footer p-3">
+								<p class="poduct_name">Levitra Generique</p>
+								<a href="#"><span class="cart_button"><img src="img/cart.svg" alt=""></span>Acheter</a>	
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<article class="article container-fluid p-3" >
+				<h2 class="title_content">e rectiestoornissen: feiten, oorzaken, behandeling</h2>
+				<div class=" block row g-0">
+					<div class="title_block">
+						<div class="bg_img">
+							<img src="img/logo.png" alt="">
+						</div>
+						<h3>Wat is erectiestoornissen?</h3>
+					</div>
+					<div class="block_content row g-0">
+						<p class="content col-sm-12">Selon les chiffres fournis par UroFrance.org, 11,4% des hommes de moins de 50 ans en France sont touchés par l'impuissance sexuelle. Cette statistique grandit en proportion directe avec l'âge, et par l’âge de 70 ans, 66,7% des Français sont atteints de DE. Bien que le risque de dysfonction érectile augmente avec l’âge, le vieillissement n’est pas la raison des troubles sexuels. En vérité, la détérioration générale de la santé pose des problèmes dans la sphère sexuelle.</p>
+					</div>
+				</div>
+				<div class=" block row g-0">
+					<div class="title_block">
+						<div class="bg_img">
+							<img src="img/logo.png" alt="">
+						</div>
+						<h3>Medicijnen die erectiestoornissen behandelen</h3>
+					</div>
+					<div class="block_content row g-0">
+						<p class="content col-lg-7 p-0">Selon les chiffres fournis par UroFrance.org, 11,4% des hommes de moins de 50 ans en France sont touchés par l'impuissance sexuelle. Cette statistique grandit en proportion directe avec l'âge, et par l’âge de 70 ans, 66,7% des Français sont atteints de DE. Bien que le risque de dysfonction érectile augmente avec l’âge, le vieillissement n’est pas la raison des troubles sexuels. En vérité, la détérioration générale de la santé pose des problèmes dans la sphère sexuelle.</p>
+						<div class="block_img col-lg-5 p-0"><img src="img/content_img/article_image.png" alt=""></div>
+					</div>
+				</div>
+				<div class=" block row g-0">
+					<div class="title_block_list">
+						<h4>Comme cela a déjà été expliqué, les fabricants de médicaments génériques ne doivent pas investir dans les étapes suivantes de la production:</h4>
+					</div>
+					<div class="block_content_list row g-0">
+						<ul class="list">
+							<li class="list-item">découverte de la formule</li>
+							<li class="list-item">les recherches</li>
+							<li class="list-item">les études et tests</li>
+							<li class="list-item">les tests de post-production</li>
+							<li class="list-item">l’obtention d'un brevet</li>
+							<li class="list-item">la promotion</li>
+							<li class="list-item">les recherches des nouveaux médicaments</li>
+						</ul>
+					</div>
+				</div>
+			</article>
+		</section>
+	</section>
+</main>
+
+<footer class="footer container-fluid p-0">
+	<div class="wrapper row p-0 g-0">
+		<div class="block_footer left_footer col-md-3">
+			<div class="menu_bottom">
+				<ul class="menu-list">
+					<li class="menu-item"><a class="menu-item-link" href="#">Ons team</a></li>
+					<li class="menu-item"><a class="menu-item-link" href="#">Onze Contacten</a></li>
+					<li class="menu-item"><a class="menu-item-link" href="#">Levering</a></li>
+					<li class="menu-item"><a class="menu-item-link" href="#">Disclaimer</a></li>
+					<li class="menu-item"><a class="menu-item-link" href="#">Neem contact met ons op</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="block_footer right-footer col-md-9">
+				<div class="img_footer">
+					<img src="img/ajanta_1.png" alt="">
+					<img src="img/sunrise_1.png" alt="">
+					<img src="img/zydus_1.png" alt="">
+					<img src="img/ranbaxy_1.png" alt="">
+					<img src="img/aurochem_1.png" alt="">
+					<img src="img/alkem_1.png" alt="">
+				</div>
+				<div class="copyright">
+					<p>Tous les droits sont réservés. Les noms de marque (Cialis®, Viagra®, Levitra®, Stendra®, Priligy®, Zydena® et autres) mentionnés sur le site sont la propriété de leurs propriétaires respectifs. Toute tentative de copie du contenu de ce site, en tout ou en partie, fera l'objet de poursuites judiciaires. Copyright ® 2019.</p>
+				</div>
+		</div>
+	</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
