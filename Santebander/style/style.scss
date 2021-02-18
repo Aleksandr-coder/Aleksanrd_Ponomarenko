@@ -1,11 +1,9 @@
 @import 'reset.scss';
 @font-face {
-  font-family: "Ubuntu",
-  url("../fonts/Ubuntu-L.ttf") format("ttf"),
-  url("../fonts/Ubuntu-M.ttf") format("ttf"),
-  url("../fonts/Ubuntu-R_0.ttf") format("ttf");
-  font-style: normal;
-  font-weight: normal;
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-L.ttf");
+  src: url("../fonts/Ubuntu-M.ttf");
+  src: url("../fonts/Ubuntu-R_0.ttf");
 }
 body{
 	position: relative;
@@ -39,8 +37,8 @@ body{
 		.logo{
 			display: flex;
 			.img_logo{
-				width: 40px;
-				height: 40px;
+				width: 36px;
+				height: 36px;
 				img{
 					min-width: 100%;
 					height: 100%;
@@ -687,6 +685,7 @@ main{
 		}
 		.article{
 			.title_content{
+				font-family: 'Ubuntu', sans-serif;
 				font-size: calc(10px + 40*(100vw / 1920));
 				margin: 40px 0;
 				&::first-letter{
@@ -962,7 +961,6 @@ main{
 			}
 		}
 		.sector_mein{
-			flex-direction: column-reverse;
 			#sidebar{
 				padding: 0;
 				.products{
@@ -1205,6 +1203,15 @@ main{
 					}
 							}
 						}
+					}
+				}
+			}
+		}
+		.sector_mein{
+			#sidebar{
+				.delivery{
+					img, .img_auto{
+						width: 20%;
 					}
 				}
 			}

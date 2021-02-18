@@ -1,6 +1,6 @@
-<div id="sidebar" class="col-md-3">
+<div id="sidebar" class="col-md-3 order-last">
 			<div class="play">
-				<img src="img/pay_.png" alt="">
+				<img src="img/pay.png" alt="">
 			</div>
 			<div class="products">
 				<p>Products</p>
@@ -97,7 +97,7 @@
 					        <div class="product_sidebar item_19">
 					        	<a class="link_product" href="#">Viagra Professional</a>
 					        </div>
-					        <div class="product_sidebar item_20">
+					        <div class="product_sidebar item_3">
 					        	<a class="link_product" href="#">Viagra Soft</a>
 					        </div>
 					        <div class="product_sidebar item_21">

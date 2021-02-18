@@ -4,7 +4,7 @@
 		<div class="logo_and_menu container-fluid p-0">
 			<div class="logo col-sm-3 p-0">
 				<div class="img_logo">
-					<img src="img/logo.png" alt="">
+					<img src="img/logo.svg" alt="">
 				</div>
 				<div class="logo_title">
 					<h1 class="logo_text">Sante bander</h1>

@@ -356,9 +356,10 @@ textarea {
 }
 
 @font-face {
-  font-family: "Ubuntu", url("../fonts/Ubuntu-L.ttf") format("ttf"), url("../fonts/Ubuntu-M.ttf") format("ttf"), url("../fonts/Ubuntu-R_0.ttf") format("ttf");
-  font-style: normal;
-  font-weight: normal;
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-L.ttf");
+  src: url("../fonts/Ubuntu-M.ttf");
+  src: url("../fonts/Ubuntu-R_0.ttf");
 }
 body {
   position: relative;
@@ -397,8 +398,8 @@ body {
   display: flex;
 }
 .header .logo_and_menu .logo .img_logo {
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
 }
 .header .logo_and_menu .logo .img_logo img {
   min-width: 100%;
@@ -993,6 +994,7 @@ main .modal .modal-dialog .modal-content .modal-footer .connect img {
   box-shadow: 0 0 10px #000;
 }
 .sector_mein .section .article .title_content {
+  font-family: "Ubuntu", sans-serif;
   font-size: calc(10px + 40*(100vw / 1920));
   margin: 40px 0;
 }
@@ -1234,9 +1236,6 @@ main .modal .modal-dialog .modal-content .modal-footer .connect img {
     display: none;
   }
 
-  .sector_mein {
-    flex-direction: column-reverse;
-  }
   .sector_mein #sidebar {
     padding: 0;
   }
@@ -1426,6 +1425,10 @@ main .modal .modal-dialog .modal-content .modal-footer .connect img {
   }
   .header .logo_and_menu .navbar .container-fluid .navbar-nav .login_cart .cart_login_block .money span {
     font-size: 8px;
+  }
+
+  .sector_mein #sidebar .delivery img, .sector_mein #sidebar .delivery .img_auto {
+    width: 20%;
   }
 
   .footer .right-footer {
