@@ -571,7 +571,7 @@ body {
   font-family: "Ubuntu", sans-serif;
   font-weight: 500;
   line-height: 50px;
-  height: 120px;
+  height: auto;
   background: rgba(221, 189, 255, 0.1);
   border-radius: 50px;
   transform: translate(0px, 200%);
@@ -659,9 +659,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
 }
 .portfolio .container .work_resultat .work {
-  width: 23%;
+  width: calc(15% - 5px);
   margin: 10px;
 }
 .portfolio .container .work_resultat .work .items_block {
